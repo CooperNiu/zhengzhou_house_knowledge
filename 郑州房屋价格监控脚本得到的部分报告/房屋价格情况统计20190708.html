@@ -1,0 +1,4752 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="generator" content="HTMLTestRunner 0.9.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <!-- <script type="text/javascript" src="js/echarts.common.min.js"></script> -->
+    <script type="text/javascript" class="init">
+        $(document).ready(function() {
+            $('#day1').DataTable();
+            $('#day7').DataTable();
+            $('#day30').DataTable();
+        } );
+    </script>
+    <style type="text/css" media="screen">
+        body        { font-family: Microsoft YaHei,Consolas,arial,sans-serif; font-size: 80%; }
+        table       { font-size: 100%; }
+        pre         { white-space: pre-wrap;word-wrap: break-word; }
+        /* -- heading ---------------------------------------------------------------------- */
+        h1 {
+            font-size: 16pt;
+            color: gray;
+        }
+        .heading {
+            margin-top: 0ex;
+            margin-bottom: 1ex;
+        }
+        .heading .attribute {
+            margin-top: 1ex;
+            margin-bottom: 0;
+        }
+        .heading .description {
+            margin-top: 2ex;
+            margin-bottom: 3ex;
+        }
+        /* -- css div popup ------------------------------------------------------------------------ */
+        a.popup_link {
+        }
+        a.popup_link:hover {
+            color: red;
+        }
+        .popup_window {
+            display: none;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            /*border: solid #627173 1px; */
+            padding: 10px;
+            /*background-color: #E6E6D6; */
+            font-family: "Lucida Console", "Courier New", Courier, monospace;
+            text-align: left;
+            font-size: 8pt;
+            /* width: 500px;*/
+        }
+        /* -- report ------------------------------------------------------------------------ */
+        #show_detail_line {
+            margin-top: 3ex;
+            margin-bottom: 1ex;
+        }
+        #result_table {
+            width: 99%;
+        }
+        #header_row {
+            font-weight: bold;
+            color: #303641;
+            background-color: #ebebeb;
+        }
+        #total_row  { font-weight: bold; }
+        .passClass  { background-color: #bdedbc; }
+        .failClass  { background-color: #ffefa4; }
+        .errorClass { background-color: #ffc9c9; }
+        .passCase   { color: #6c6; }
+        .failCase   { color: #FF6600; font-weight: bold; }
+        .errorCase  { color: #c00; font-weight: bold; }
+        .hiddenRow  { display: none; }
+        .testcase   { margin-left: 2em; }
+        /* -- ending ---------------------------------------------------------------------- */
+        #ending {
+        }
+        #div_base {
+            position:absolute;
+            top:0%;
+            left:5%;
+            right:5%;
+            width: auto;
+            height: auto;
+            margin: -15px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div_base">
+
+    <div class='page-header'>
+        <h1>房屋价格情况统计</h1>
+        <p class='attribute'><strong>统计时间:</strong> 2019-07-08 18:12:11</p>
+        <p class='attribute'><strong>运行时长:</strong> 5.383111154000005s</p>
+    </div>
+
+        <h2>较上1天</h2>
+        <table id="day1" class="display" style="width:100%">
+            <thead>
+            <tr>
+                <th>升降标志</th>
+                <th>房屋名</th>
+                <th>房屋备注</th>
+                <th>房屋总价</th>
+                <th>房屋历史总价</th>
+                <th>房屋单价</th>
+                <th>小区名</th>
+                <th>房屋链接</th>
+                <th>来源网站</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>新增</td>
+                <td>郑大二附院对/面，2楼霸气大三房，紧/邻省委军区！</td>
+                <td>低楼层(共6层)3室2厅|95.12平米|南北</td>
+                <td>150万</td>
+                <td>-</td>
+                <td>单价15769.6元/平米</td>
+                <td>低楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19061911710100134465.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经二路纬二路  二十三中家属院 温馨小3房 适中楼层</td>
+                <td>中楼层(共5层)|1986年建|3室2厅|72.08平米|南北</td>
+                <td>165万</td>
+                <td>-</td>
+                <td>单价22891.2元/平米</td>
+                <td>中楼层(共5层)</td>
+                <td>https://zz.ke.com/ershoufang/18101311710100105319.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>郑大二附院对/面，2楼霸气大三房，紧/邻省委军区！</td>
+                <td>低楼层(共6层)3室2厅|95.12平米|南北</td>
+                <td>150万</td>
+                <td>-</td>
+                <td>单价15769.6元/平米</td>
+                <td>低楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19061911710100134465.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经二路纬二路  二十三中家属院 温馨小3房 适中楼层</td>
+                <td>中楼层(共5层)|1986年建|3室2厅|72.08平米|南北</td>
+                <td>165万</td>
+                <td>-</td>
+                <td>单价22891.2元/平米</td>
+                <td>中楼层(共5层)</td>
+                <td>https://zz.ke.com/ershoufang/18101311710100105319.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>郑大二附院对/面，2楼霸气大三房，紧/邻省委军区！</td>
+                <td>低楼层(共6层)3室2厅|95.12平米|南北</td>
+                <td>150万</td>
+                <td>-</td>
+                <td>单价15769.6元/平米</td>
+                <td>低楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19061911710100134465.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经二路纬二路  二十三中家属院 温馨小3房 适中楼层</td>
+                <td>中楼层(共5层)|1986年建|3室2厅|72.08平米|南北</td>
+                <td>165万</td>
+                <td>-</td>
+                <td>单价22891.2元/平米</td>
+                <td>中楼层(共5层)</td>
+                <td>https://zz.ke.com/ershoufang/18101311710100105319.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>开祥御龙城 绿荫公园对面 人车分流小区 </td>
+                <td>3室1厅1卫92.2㎡南中层(共33层)</td>
+                <td>BCDFGHJKLMNSTWXYZ其他南北通透138万</td>
+                <td>-</td>
+                <td>14967元/㎡</td>
+                <td>开祥御龙城金水天明路82号</td>
+                <td>//short.58.com/zd_p/4669bbbd-d8ea-472f-860b-a1bb2d5db5ad/?target=hh-16-xgk_psfegvimob_86039195548078q-feykn&end=end</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>哇！出门人民公园，均价12000，双卫大三房，南 </td>
+                <td>3室2厅2卫120㎡南北高层(共26层)</td>
+                <td>140万</td>
+                <td>-</td>
+                <td>11666元/㎡</td>
+                <td>金峰金岸国际金水西太康路距离1号线二七广场地铁站854米</td>
+                <td>//short.58.com/zd_p/19c36459-61e9-470a-80fe-8996dffb88d9/?target=hh-16-xgk_psfegvimob_86036551152619q-feykn&end=end</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>此房可以买！东风路中医院，高教小区，</td>
+                <td>3室2厅2卫117㎡南北中层(共7层)</td>
+                <td>南北通透132万</td>
+                <td>-</td>
+                <td>11282元/㎡</td>
+                <td>省会教师生活园区金水丰庆路</td>
+                <td>https://zz.58.com/ershoufang/38254311936159x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>地铁口 主语城二期  </td>
+                <td>3室2厅2卫125㎡南北高层(共21层)</td>
+                <td>南北通透130万</td>
+                <td>-</td>
+                <td>10400元/㎡</td>
+                <td>安泰金苑金水三全路86号</td>
+                <td>https://zz.58.com/ershoufang/38200505588768x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>沙口路黄河路 地铁口 雅阁思达 精装</td>
+                <td>3室2厅1卫92㎡南北中层(共6层)</td>
+                <td>南北通透130万</td>
+                <td>-</td>
+                <td>14130元/㎡</td>
+                <td>雅阁思达金水二环支路11号距离5号线沙口路地铁站536米</td>
+                <td>https://zz.58.com/ershoufang/38708383569436x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>贾鲁河东风渠双河交汇处，精装三房，</td>
+                <td>3室2厅1卫89㎡南北低层(共32层)</td>
+                <td>南北通透125万</td>
+                <td>-</td>
+                <td>14044元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38296061176705x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>锦艺金水湾 </td>
+                <td>3室2厅1卫89㎡南高层(共34层)</td>
+                <td>南北通透121万</td>
+                <td>-</td>
+                <td>13595元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38428351939214x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>新出双气标准小三房，</td>
+                <td>3室1厅1卫89㎡南高层(共26层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>16292元/㎡</td>
+                <td>盛润小城之春金水园田路</td>
+                <td>https://zz.58.com/ershoufang/38609217582747x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>社区楼中楼 复式 </td>
+                <td>3室2厅2卫73㎡南高层(共8层)</td>
+                <td>南北通透126万</td>
+                <td>-</td>
+                <td>17260元/㎡</td>
+                <td>21世纪社区楼中楼金水中州大道距离2号线沙门地铁站1019米</td>
+                <td>https://zz.58.com/ershoufang/38574651179803x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>地铁口 多层 瑞隆城  </td>
+                <td>3室2厅1卫87㎡南北中层(共7层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>16666元/㎡</td>
+                <td>瑞隆城金水沙口路距离5号线沙口路地铁站579米</td>
+                <td>https://zz.58.com/ershoufang/38649192721665x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>真实，二附院旁边，精装三房，至此一套，</td>
+                <td>3室1厅1卫97㎡南北中层(共7层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>12371元/㎡</td>
+                <td>天祥苑金水经八路28号距离5号线郑州人民医院地铁站989米</td>
+                <td>https://zz.58.com/ershoufang/38704468926993x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五年，户型方正，</td>
+                <td>3室2厅1卫118㎡南北高层(共18层)</td>
+                <td>南北通透157万</td>
+                <td>-</td>
+                <td>13305元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38707683893405x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>锦艺金水湾 </td>
+                <td>3室2厅1卫89.0㎡南高层(共34层)</td>
+                <td>南北通透121万</td>
+                <td>-</td>
+                <td>13595元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38638647353616x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>阳光嘉苑，首付20万，大型社区多层三房，</td>
+                <td>3室2厅1卫112㎡南北高层(共6层)</td>
+                <td>南北通透125万</td>
+                <td>-</td>
+                <td>11160元/㎡</td>
+                <td>阳光嘉苑金水国基路99号</td>
+                <td>https://zz.58.com/ershoufang/38376666705552x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>大户人家 花园双气多层洋房 </td>
+                <td>3室2厅1卫93㎡南北中层(共6层)</td>
+                <td>南北通透155万</td>
+                <td>-</td>
+                <td>16666元/㎡</td>
+                <td>思达大户人家金水天明路90号</td>
+                <td>https://zz.58.com/ershoufang/38538718288273x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>阳光假日 电梯房 </td>
+                <td>3室2厅1卫128.0㎡南北低层(共12层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>12500元/㎡</td>
+                <td>阳光假日金水南阳路</td>
+                <td>https://zz.58.com/ershoufang/38609451853982x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>03年精装3房，文化路二小隔壁，首付18万，</td>
+                <td>3室2厅1卫106.5㎡南北中层(共7层)</td>
+                <td>南北126万</td>
+                <td>-</td>
+                <td>11830元/㎡</td>
+                <td>文苑骏景金水文化路23号距离5号线郑州人民医院地铁站311米</td>
+                <td>https://zz.58.com/ershoufang/38676017926277x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>花园路地铁口 首付19万 精装 </td>
+                <td>3室2厅1卫115㎡南低层(共32层)</td>
+                <td>南北通透135万</td>
+                <td>-</td>
+                <td>11739元/㎡</td>
+                <td>瀚海晴洲金水国基路距离2号线沙门地铁站816米</td>
+                <td>https://zz.58.com/ershoufang/38626998117775x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>不限购，法拍房，北三环文化路</td>
+                <td>3室2厅1卫97.03㎡南北低层(共32层)</td>
+                <td>南北通透128万</td>
+                <td>-</td>
+                <td>13191元/㎡</td>
+                <td>金晨嘉园金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38118651609485x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>金印阳光城 精装大三房 业主急卖  </td>
+                <td>3室2厅1卫112㎡南中层(共18层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12500元/㎡</td>
+                <td>金印阳光城金水宏明路距离2号线沙门地铁站1002米</td>
+                <td>https://zz.58.com/ershoufang/38132732861597x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>业主急卖，黄河路东三街，首付22万买，刚需温馨3 </td>
+                <td>3室2厅1卫117㎡南北中层(共7层)</td>
+                <td>132万</td>
+                <td>-</td>
+                <td>11282元/㎡</td>
+                <td>贸易厅1号院金水同乐路10号距离5号线郑州人民医院地铁站750米</td>
+                <td>https://zz.58.com/ershoufang/38663922045336x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>郑汴路玉凤路 三号线地铁口 检察院家属院 </td>
+                <td>3室2厅1卫113㎡南北高层(共7层)</td>
+                <td>南北140万</td>
+                <td>-</td>
+                <td>12389元/㎡</td>
+                <td>河南省检察院家属院南院金水凤鸣路</td>
+                <td>https://zz.58.com/ershoufang/38518051184285x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>海洋馆附近，首付20万，正商物业，电梯小高层，南 </td>
+                <td>3室2厅1卫115㎡南北中层(共21层)</td>
+                <td>129万</td>
+                <td>-</td>
+                <td>11217元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38727030719909x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路农业路 紧邻地铁口 精装</td>
+                <td>3室2厅2卫122.31㎡南北低层(共7层)</td>
+                <td>南北通透142万</td>
+                <td>-</td>
+                <td>11609元/㎡</td>
+                <td>瑞丰园金水南阳路284号距离5号线海滩寺地铁站938米</td>
+                <td>https://zz.58.com/ershoufang/38398467178247x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>正商园田花园精装三房，中间楼层，</td>
+                <td>3室2厅1卫105.83㎡南北中层(共18层)</td>
+                <td>南北通透124万</td>
+                <td>-</td>
+                <td>11716元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38698688703747x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>正弘春晓，精装三房，有暖气，</td>
+                <td>3室2厅1卫98.38㎡南北中层(共28层)</td>
+                <td>南北通透128万</td>
+                <td>-</td>
+                <td>13010元/㎡</td>
+                <td>正弘春晓金水索凌路</td>
+                <td>https://zz.58.com/ershoufang/38604602287002x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>贾鲁河旁 锦艺金水湾 </td>
+                <td>3室2厅2卫120㎡南中层(共34层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>13333元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38527841318678x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>省医 省直姚寨小区 精装3房 首付28万 </td>
+                <td>3室2厅1卫84㎡南北高层(共7层)</td>
+                <td>南北120万</td>
+                <td>-</td>
+                <td>14285元/㎡</td>
+                <td>河南省直姚寨小区金水红旗路134号距离5号线姚砦地铁站601米</td>
+                <td>https://zz.58.com/ershoufang/38615682677156x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>花园路丹尼斯附近</td>
+                <td>3室2厅1卫119㎡南北高层(共7层)</td>
+                <td>南北通透146万</td>
+                <td>-</td>
+                <td>12268元/㎡</td>
+                <td>河南省工艺美术学校家属院金水畜牧路6号距离2号线东风路地铁站743米</td>
+                <td>https://zz.58.com/ershoufang/38583184076951x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文三 47中 均价一万一平 O首咐买三环内 </td>
+                <td>3室2厅1卫120㎡南北中层(共7层)</td>
+                <td>南北120万</td>
+                <td>-</td>
+                <td>10000元/㎡</td>
+                <td>中方园东区金水园田路</td>
+                <td>https://zz.58.com/ershoufang/38726670973480x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>急，南阳路农业路 首付25万 11年精装修，</td>
+                <td>3室2厅1卫130㎡南北高层(共27层)</td>
+                <td>南北152万</td>
+                <td>-</td>
+                <td>11692元/㎡</td>
+                <td>茂鑫公寓金水孟砦北街7号距离5号线海滩寺地铁站1106米</td>
+                <td>https://zz.58.com/ershoufang/38671464521478x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装双气 </td>
+                <td>3室2厅2卫131.03㎡南北中层(共6层)</td>
+                <td>南北通透158万</td>
+                <td>-</td>
+                <td>12058元/㎡</td>
+                <td>瑞景花园金水国基路108号</td>
+                <td>https://zz.58.com/ershoufang/38540174095897x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文化路锦艺金水湾一期，</td>
+                <td>3室2厅1卫89㎡南高层(共34层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>13483元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38696072600099x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东风路园田路 园田小区 精装</td>
+                <td>3室2厅2卫150㎡南北低层(共6层)</td>
+                <td>南北通透152万</td>
+                <td>-</td>
+                <td>10133元/㎡</td>
+                <td>园田小区金水园田路</td>
+                <td>https://zz.58.com/ershoufang/38408152057761x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>阳光嘉苑 精装修 采光好 </td>
+                <td>3室2厅1卫108㎡南北低层(共6层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>13888元/㎡</td>
+                <td>阳光嘉苑金水国基路99号</td>
+                <td>https://zz.58.com/ershoufang/38210908927781x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>邻国贸，近纬五路一小八中，精装</td>
+                <td>3室2厅1卫120㎡南北中层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>11666元/㎡</td>
+                <td>经五路15号院金水经五路15号距离2号线黄河路地铁站608米</td>
+                <td>https://zz.58.com/ershoufang/38308917673346x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>瑞景花园</td>
+                <td>3室2厅2卫109.35㎡南北高层(共6层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12802元/㎡</td>
+                <td>瑞景花园金水国基路108号</td>
+                <td>https://zz.58.com/ershoufang/38508329847969x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>地铁4号线 四月天小学 精装双气三房 </td>
+                <td>3室2厅1卫113㎡南北低层(共20层)</td>
+                <td>南北通透146万</td>
+                <td>-</td>
+                <td>12920元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38715661838376x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>丰乐花苑，绿荫公园森林半岛旁，</td>
+                <td>3室2厅2卫120㎡南高层(共6层)</td>
+                <td>南北通透152万</td>
+                <td>-</td>
+                <td>12666元/㎡</td>
+                <td>丰乐花苑金水天明路95号</td>
+                <td>https://zz.58.com/ershoufang/38532571739540x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三环内 长基花园 人车分流 </td>
+                <td>3室2厅2卫125.90㎡南北中层(共33层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>12708元/㎡</td>
+                <td>豫军长基花园金水博颂路</td>
+                <td>https://zz.58.com/ershoufang/38608024294803x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>急！思达大户人家 稀有复式送露台 精装修</td>
+                <td>3室2厅1卫95㎡南北高层(共7层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>12631元/㎡</td>
+                <td>思达大户人家金水天明路90号</td>
+                <td>https://zz.58.com/ershoufang/38716062620037x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>业主急售 随时看房 博宇晴城 电梯房 </td>
+                <td>3室2厅1卫116.31㎡南北高层(共18层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>12896元/㎡</td>
+                <td>博宇晴城金水普庆路,近新村路</td>
+                <td>https://zz.58.com/ershoufang/38685627554694x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>和昌悦澜 毛坯 特便宜的一套 </td>
+                <td>3室2厅1卫89㎡南低层(共27层)</td>
+                <td>南北通透138万</td>
+                <td>-</td>
+                <td>15505元/㎡</td>
+                <td>和昌悦澜南苑金水宏康路67号距离2号线刘庄地铁站674米</td>
+                <td>https://zz.58.com/ershoufang/38383547108005x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路林荫大道小区，多层</td>
+                <td>3室2厅1卫118㎡南高层(共6层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>12711元/㎡</td>
+                <td>林荫大道小区金水南阳路212号</td>
+                <td>https://zz.58.com/ershoufang/38626820433170x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>汉飞城市公园均价1.2 新出多层 </td>
+                <td>3室2厅2卫120㎡南北中层(共6层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>12083元/㎡</td>
+                <td>汉飞城市公园西区金水宏明路距离2号线柳林地铁站916米</td>
+                <td>https://zz.58.com/ershoufang/38598645178887x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经七路。商务厅家属院 精装 双气 3房 </td>
+                <td>3室1厅1卫100㎡南北中层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>14000元/㎡</td>
+                <td>河南省商务厅家属院金水经七路15-4号距离5号线郑州人民医院地铁站1002米</td>
+                <td>https://zz.58.com/ershoufang/38697407617158x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路东风路 富田丽景花园 双气小三房 双地铁  </td>
+                <td>3室2厅1卫110㎡南北低层(共6层)</td>
+                <td>150万</td>
+                <td>-</td>
+                <td>13636元/㎡</td>
+                <td>富田丽景花园金水南阳路226号</td>
+                <td>https://zz.58.com/ershoufang/38715276700451x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>新出3房  </td>
+                <td>3室2厅2卫115㎡南北中层(共7层)</td>
+                <td>南北通透146万</td>
+                <td>-</td>
+                <td>12695元/㎡</td>
+                <td>正商北云鹤金水广电南路10号距离2号线北三环地铁站475米</td>
+                <td>https://zz.58.com/ershoufang/38674201397507x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>丰庆路正商园田花园 首付18万 大三房</td>
+                <td>3室2厅1卫115㎡南北低层(共20层)</td>
+                <td>南北通透135万</td>
+                <td>-</td>
+                <td>11739元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38653412002599x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经三路农业路 报业公寓 交通便利 </td>
+                <td>3室2厅1卫113㎡南北低层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12389元/㎡</td>
+                <td>河南报业公寓金水经二路北33号距离2号线关虎屯地铁站1347米</td>
+                <td>https://zz.58.com/ershoufang/38640237658782x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付15万，多层一梯一户，</td>
+                <td>3室2厅1卫123㎡南北中层(共7层)</td>
+                <td>南北通透130万</td>
+                <td>-</td>
+                <td>10569元/㎡</td>
+                <td>兴达公寓金水园田路23号</td>
+                <td>https://zz.58.com/ershoufang/38726730419333x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路地铁口 阳光假日 </td>
+                <td>3室2厅1卫95㎡南北低层(共6层)</td>
+                <td>南北通透125万</td>
+                <td>-</td>
+                <td>13157元/㎡</td>
+                <td>阳光假日金水南阳路</td>
+                <td>https://zz.58.com/ershoufang/38726188628754x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>上四月天小学园田花园精装大三房电梯房 </td>
+                <td>3室2厅1卫105㎡南北低层(共21层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>11428元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38631368558242x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>用钱急售 省委党校精装双气</td>
+                <td>3室2厅1卫105㎡南北中层(共7层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>13809元/㎡</td>
+                <td>河南省委党校家属院金水经七路距离5号线郑州人民医院地铁站542米</td>
+                <td>https://zz.58.com/ershoufang/38266460296974x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经典三房，多层三楼，</td>
+                <td>3室2厅1卫94㎡南中层(共7层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>12765元/㎡</td>
+                <td>圣地花园金水丰庆路</td>
+                <td>https://zz.58.com/ershoufang/38642484340640x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三十，一中旁精装</td>
+                <td>3室2厅2卫130.5㎡南中层(共7层)</td>
+                <td>南北通透130万</td>
+                <td>-</td>
+                <td>9961元/㎡</td>
+                <td>天明路16号院金水天明路16号距离5号线海滩寺地铁站1024米</td>
+                <td>https://zz.58.com/ershoufang/38729626551061x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>农业路经三路 报业公寓 精装双气3室 </td>
+                <td>3室2厅1卫110㎡南北中层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12727元/㎡</td>
+                <td>河南报业公寓金水经二路北33号距离2号线关虎屯地铁站1347米</td>
+                <td>https://zz.58.com/ershoufang/38198651096076x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>恒升府第 电梯房 </td>
+                <td>3室2厅1卫105㎡南北共5层</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>15238元/㎡</td>
+                <td>恒升府第金水晨旭路10号</td>
+                <td>https://zz.58.com/ershoufang/38630169721987x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东风路 轻工业学院家属院 双气三房 </td>
+                <td>3室2厅1卫93㎡南北高层(共6层)</td>
+                <td>南北通透125万</td>
+                <td>-</td>
+                <td>13440元/㎡</td>
+                <td>郑州轻工业学院家属院金水东风路</td>
+                <td>https://zz.58.com/ershoufang/38698719413005x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>开祥御龙城 绿荫公园对面 人车分流小区 </td>
+                <td>3室1厅1卫92.2㎡南中层(共33层)</td>
+                <td>BCDFGHJKLMNSTWXYZ其他南北通透138万</td>
+                <td>-</td>
+                <td>14967元/㎡</td>
+                <td>开祥御龙城金水天明路82号</td>
+                <td>//short.58.com/zd_p/e5a7d825-6ea2-47d3-b7c7-33de4645edda/?target=hh-16-xgk_psfegvimob_86039195548078q-feykn&end=end</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>哇！出门人民公园，均价12000，双卫大三房，南 </td>
+                <td>3室2厅2卫120㎡南北高层(共26层)</td>
+                <td>140万</td>
+                <td>-</td>
+                <td>11666元/㎡</td>
+                <td>金峰金岸国际金水西太康路距离1号线二七广场地铁站854米</td>
+                <td>//short.58.com/zd_p/46bf3fcc-860a-45c9-ab29-b2e85e0898e4/?target=hh-16-xgk_psfegvimob_86036551152619q-feykn&end=end</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>A绿苑小区 精装修</td>
+                <td>3室2厅1卫122.00㎡南北中层(共6层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>11885元/㎡</td>
+                <td>绿苑小区金水沙口路距离5号线沙口路地铁站586米</td>
+                <td>https://zz.58.com/ershoufang/38609940020121x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>北三环 文化路</td>
+                <td>3室2厅1卫97㎡南北低层(共33层)</td>
+                <td>南北通透156万</td>
+                <td>-</td>
+                <td>16082元/㎡</td>
+                <td>瀚海泰苑金水北三环</td>
+                <td>https://zz.58.com/ershoufang/38663921936678x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文化绿城学 区房 明天花园 精装大三房 </td>
+                <td>3室2厅1卫129.00㎡南北高层(共11层)</td>
+                <td>南北通透155万</td>
+                <td>-</td>
+                <td>12015元/㎡</td>
+                <td>明天花园金水博颂路37号</td>
+                <td>https://zz.58.com/ershoufang/38728971600014x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文化绿城学 区房 目送孩 子上学 </td>
+                <td>3室2厅2卫135㎡南北中层(共28层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>10740元/㎡</td>
+                <td>富邦铭邸二期金水博颂路20号</td>
+                <td>https://zz.58.com/ershoufang/38608024314369x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付20万 </td>
+                <td>3室2厅2卫135㎡南北中层(共6层)</td>
+                <td>南北通透158万</td>
+                <td>-</td>
+                <td>11703元/㎡</td>
+                <td>富邦铭邸(一期)金水博颂路20号</td>
+                <td>https://zz.58.com/ershoufang/38663925646742x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>北三环 </td>
+                <td>3室2厅2卫135㎡南北低层(共27层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>10740元/㎡</td>
+                <td>富邦铭邸二期金水博颂路20号</td>
+                <td>https://zz.58.com/ershoufang/38663925658504x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>划片文化绿城小学 文化绿城 精装</td>
+                <td>3室2厅1卫106㎡南北中层(共7层)</td>
+                <td>南北通透142万</td>
+                <td>-</td>
+                <td>13396元/㎡</td>
+                <td>文化绿城金水丰庆路4号</td>
+                <td>https://zz.58.com/ershoufang/38642633510662x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>贾鲁河畔河景房 锦艺金水湾三期118平</td>
+                <td>3室2厅2卫118㎡南北中层(共26层)</td>
+                <td>通透140万</td>
+                <td>-</td>
+                <td>11864元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38527380241933x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>人民公园电梯房！</td>
+                <td>3室2厅2卫116㎡南北高层(共26层)</td>
+                <td>通透135万</td>
+                <td>-</td>
+                <td>11637元/㎡</td>
+                <td>金峰金岸国际金水西太康路距离1号线二七广场地铁站854米</td>
+                <td>https://zz.58.com/ershoufang/38718684674087x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付30 均价一万二经三路东风渠畔</td>
+                <td>3室2厅1卫100㎡南北低层(共7层)</td>
+                <td>通透120万</td>
+                <td>-</td>
+                <td>12000元/㎡</td>
+                <td>花花牛家属院金水晨旭路1号距离2号线东风路地铁站1274米</td>
+                <td>https://zz.58.com/ershoufang/38726535771044x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五年，户型方正，</td>
+                <td>3室2厅1卫118㎡南北高层(共18层)</td>
+                <td>南北通透157万</td>
+                <td>-</td>
+                <td>13305元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38707683893405x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>锦艺金水湾 </td>
+                <td>3室2厅1卫89.0㎡南高层(共34层)</td>
+                <td>南北通透121万</td>
+                <td>-</td>
+                <td>13595元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38638647353616x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>阳光嘉苑，首付20万，大型社区多层三房，</td>
+                <td>3室2厅1卫112㎡南北高层(共6层)</td>
+                <td>南北通透125万</td>
+                <td>-</td>
+                <td>11160元/㎡</td>
+                <td>阳光嘉苑金水国基路99号</td>
+                <td>https://zz.58.com/ershoufang/38376666705552x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>大户人家 花园双气多层洋房 </td>
+                <td>3室2厅1卫93㎡南北中层(共6层)</td>
+                <td>南北通透155万</td>
+                <td>-</td>
+                <td>16666元/㎡</td>
+                <td>思达大户人家金水天明路90号</td>
+                <td>https://zz.58.com/ershoufang/38538718288273x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>阳光假日 电梯房 </td>
+                <td>3室2厅1卫128.0㎡南北低层(共12层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>12500元/㎡</td>
+                <td>阳光假日金水南阳路</td>
+                <td>https://zz.58.com/ershoufang/38609451853982x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>03年精装3房，文化路二小隔壁，首付18万，</td>
+                <td>3室2厅1卫106.5㎡南北中层(共7层)</td>
+                <td>南北126万</td>
+                <td>-</td>
+                <td>11830元/㎡</td>
+                <td>文苑骏景金水文化路23号距离5号线郑州人民医院地铁站311米</td>
+                <td>https://zz.58.com/ershoufang/38676017926277x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>花园路地铁口 首付19万 精装 </td>
+                <td>3室2厅1卫115㎡南低层(共32层)</td>
+                <td>南北通透135万</td>
+                <td>-</td>
+                <td>11739元/㎡</td>
+                <td>瀚海晴洲金水国基路距离2号线沙门地铁站816米</td>
+                <td>https://zz.58.com/ershoufang/38626998117775x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>不限购，法拍房，北三环文化路</td>
+                <td>3室2厅1卫97.03㎡南北低层(共32层)</td>
+                <td>南北通透128万</td>
+                <td>-</td>
+                <td>13191元/㎡</td>
+                <td>金晨嘉园金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38118651609485x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>金印阳光城 精装大三房 业主急卖  </td>
+                <td>3室2厅1卫112㎡南中层(共18层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12500元/㎡</td>
+                <td>金印阳光城金水宏明路距离2号线沙门地铁站1002米</td>
+                <td>https://zz.58.com/ershoufang/38132732861597x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>业主急卖，黄河路东三街，首付22万买，刚需温馨3 </td>
+                <td>3室2厅1卫117㎡南北中层(共7层)</td>
+                <td>132万</td>
+                <td>-</td>
+                <td>11282元/㎡</td>
+                <td>贸易厅1号院金水同乐路10号距离5号线郑州人民医院地铁站750米</td>
+                <td>https://zz.58.com/ershoufang/38663922045336x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>郑汴路玉凤路 三号线地铁口 检察院家属院 </td>
+                <td>3室2厅1卫113㎡南北高层(共7层)</td>
+                <td>南北140万</td>
+                <td>-</td>
+                <td>12389元/㎡</td>
+                <td>河南省检察院家属院南院金水凤鸣路</td>
+                <td>https://zz.58.com/ershoufang/38518051184285x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>海洋馆附近，首付20万，正商物业，电梯小高层，南 </td>
+                <td>3室2厅1卫115㎡南北中层(共21层)</td>
+                <td>129万</td>
+                <td>-</td>
+                <td>11217元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38727030719909x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路农业路 紧邻地铁口 精装</td>
+                <td>3室2厅2卫122.31㎡南北低层(共7层)</td>
+                <td>南北通透142万</td>
+                <td>-</td>
+                <td>11609元/㎡</td>
+                <td>瑞丰园金水南阳路284号距离5号线海滩寺地铁站938米</td>
+                <td>https://zz.58.com/ershoufang/38398467178247x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>正商园田花园精装三房，中间楼层，</td>
+                <td>3室2厅1卫105.83㎡南北中层(共18层)</td>
+                <td>南北通透124万</td>
+                <td>-</td>
+                <td>11716元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38698688703747x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>正弘春晓，精装三房，有暖气，</td>
+                <td>3室2厅1卫98.38㎡南北中层(共28层)</td>
+                <td>南北通透128万</td>
+                <td>-</td>
+                <td>13010元/㎡</td>
+                <td>正弘春晓金水索凌路</td>
+                <td>https://zz.58.com/ershoufang/38604602287002x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>贾鲁河旁 锦艺金水湾 </td>
+                <td>3室2厅2卫120㎡南中层(共34层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>13333元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38527841318678x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>省医 省直姚寨小区 精装3房 首付28万 </td>
+                <td>3室2厅1卫84㎡南北高层(共7层)</td>
+                <td>南北120万</td>
+                <td>-</td>
+                <td>14285元/㎡</td>
+                <td>河南省直姚寨小区金水红旗路134号距离5号线姚砦地铁站601米</td>
+                <td>https://zz.58.com/ershoufang/38615682677156x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>花园路丹尼斯附近</td>
+                <td>3室2厅1卫119㎡南北高层(共7层)</td>
+                <td>南北通透146万</td>
+                <td>-</td>
+                <td>12268元/㎡</td>
+                <td>河南省工艺美术学校家属院金水畜牧路6号距离2号线东风路地铁站743米</td>
+                <td>https://zz.58.com/ershoufang/38583184076951x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文三 47中 均价一万一平 O首咐买三环内 </td>
+                <td>3室2厅1卫120㎡南北中层(共7层)</td>
+                <td>南北120万</td>
+                <td>-</td>
+                <td>10000元/㎡</td>
+                <td>中方园东区金水园田路</td>
+                <td>https://zz.58.com/ershoufang/38726670973480x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>急，南阳路农业路 首付25万 11年精装修，</td>
+                <td>3室2厅1卫130㎡南北高层(共27层)</td>
+                <td>南北152万</td>
+                <td>-</td>
+                <td>11692元/㎡</td>
+                <td>茂鑫公寓金水孟砦北街7号距离5号线海滩寺地铁站1106米</td>
+                <td>https://zz.58.com/ershoufang/38671464521478x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装双气 </td>
+                <td>3室2厅2卫131.03㎡南北中层(共6层)</td>
+                <td>南北通透158万</td>
+                <td>-</td>
+                <td>12058元/㎡</td>
+                <td>瑞景花园金水国基路108号</td>
+                <td>https://zz.58.com/ershoufang/38540174095897x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文化路锦艺金水湾一期，</td>
+                <td>3室2厅1卫89㎡南高层(共34层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>13483元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38696072600099x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东风路园田路 园田小区 精装</td>
+                <td>3室2厅2卫150㎡南北低层(共6层)</td>
+                <td>南北通透152万</td>
+                <td>-</td>
+                <td>10133元/㎡</td>
+                <td>园田小区金水园田路</td>
+                <td>https://zz.58.com/ershoufang/38408152057761x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>阳光嘉苑 精装修 采光好 </td>
+                <td>3室2厅1卫108㎡南北低层(共6层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>13888元/㎡</td>
+                <td>阳光嘉苑金水国基路99号</td>
+                <td>https://zz.58.com/ershoufang/38210908927781x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>邻国贸，近纬五路一小八中，精装</td>
+                <td>3室2厅1卫120㎡南北中层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>11666元/㎡</td>
+                <td>经五路15号院金水经五路15号距离2号线黄河路地铁站608米</td>
+                <td>https://zz.58.com/ershoufang/38308917673346x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>瑞景花园</td>
+                <td>3室2厅2卫109.35㎡南北高层(共6层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12802元/㎡</td>
+                <td>瑞景花园金水国基路108号</td>
+                <td>https://zz.58.com/ershoufang/38508329847969x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>地铁4号线 四月天小学 精装双气三房 </td>
+                <td>3室2厅1卫113㎡南北低层(共20层)</td>
+                <td>南北通透146万</td>
+                <td>-</td>
+                <td>12920元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38715661838376x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>丰乐花苑，绿荫公园森林半岛旁，</td>
+                <td>3室2厅2卫120㎡南高层(共6层)</td>
+                <td>南北通透152万</td>
+                <td>-</td>
+                <td>12666元/㎡</td>
+                <td>丰乐花苑金水天明路95号</td>
+                <td>https://zz.58.com/ershoufang/38532571739540x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三环内 长基花园 人车分流 </td>
+                <td>3室2厅2卫125.90㎡南北中层(共33层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>12708元/㎡</td>
+                <td>豫军长基花园金水博颂路</td>
+                <td>https://zz.58.com/ershoufang/38608024294803x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>急！思达大户人家 稀有复式送露台 精装修</td>
+                <td>3室2厅1卫95㎡南北高层(共7层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>12631元/㎡</td>
+                <td>思达大户人家金水天明路90号</td>
+                <td>https://zz.58.com/ershoufang/38716062620037x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>业主急售 随时看房 博宇晴城 电梯房 </td>
+                <td>3室2厅1卫116.31㎡南北高层(共18层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>12896元/㎡</td>
+                <td>博宇晴城金水普庆路,近新村路</td>
+                <td>https://zz.58.com/ershoufang/38685627554694x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>和昌悦澜 毛坯 特便宜的一套 </td>
+                <td>3室2厅1卫89㎡南低层(共27层)</td>
+                <td>南北通透138万</td>
+                <td>-</td>
+                <td>15505元/㎡</td>
+                <td>和昌悦澜南苑金水宏康路67号距离2号线刘庄地铁站674米</td>
+                <td>https://zz.58.com/ershoufang/38383547108005x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路林荫大道小区，多层</td>
+                <td>3室2厅1卫118㎡南高层(共6层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>12711元/㎡</td>
+                <td>林荫大道小区金水南阳路212号</td>
+                <td>https://zz.58.com/ershoufang/38626820433170x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>汉飞城市公园均价1.2 新出多层 </td>
+                <td>3室2厅2卫120㎡南北中层(共6层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>12083元/㎡</td>
+                <td>汉飞城市公园西区金水宏明路距离2号线柳林地铁站916米</td>
+                <td>https://zz.58.com/ershoufang/38598645178887x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经七路。商务厅家属院 精装 双气 3房 </td>
+                <td>3室1厅1卫100㎡南北中层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>14000元/㎡</td>
+                <td>河南省商务厅家属院金水经七路15-4号距离5号线郑州人民医院地铁站1002米</td>
+                <td>https://zz.58.com/ershoufang/38697407617158x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路东风路 富田丽景花园 双气小三房 双地铁  </td>
+                <td>3室2厅1卫110㎡南北低层(共6层)</td>
+                <td>150万</td>
+                <td>-</td>
+                <td>13636元/㎡</td>
+                <td>富田丽景花园金水南阳路226号</td>
+                <td>https://zz.58.com/ershoufang/38715276700451x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>新出3房  </td>
+                <td>3室2厅2卫115㎡南北中层(共7层)</td>
+                <td>南北通透146万</td>
+                <td>-</td>
+                <td>12695元/㎡</td>
+                <td>正商北云鹤金水广电南路10号距离2号线北三环地铁站475米</td>
+                <td>https://zz.58.com/ershoufang/38674201397507x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>丰庆路正商园田花园 首付18万 大三房</td>
+                <td>3室2厅1卫115㎡南北低层(共20层)</td>
+                <td>南北通透135万</td>
+                <td>-</td>
+                <td>11739元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38653412002599x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经三路农业路 报业公寓 交通便利 </td>
+                <td>3室2厅1卫113㎡南北低层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12389元/㎡</td>
+                <td>河南报业公寓金水经二路北33号距离2号线关虎屯地铁站1347米</td>
+                <td>https://zz.58.com/ershoufang/38640237658782x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付15万，多层一梯一户，</td>
+                <td>3室2厅1卫123㎡南北中层(共7层)</td>
+                <td>南北通透130万</td>
+                <td>-</td>
+                <td>10569元/㎡</td>
+                <td>兴达公寓金水园田路23号</td>
+                <td>https://zz.58.com/ershoufang/38726730419333x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路地铁口 阳光假日 </td>
+                <td>3室2厅1卫95㎡南北低层(共6层)</td>
+                <td>南北通透125万</td>
+                <td>-</td>
+                <td>13157元/㎡</td>
+                <td>阳光假日金水南阳路</td>
+                <td>https://zz.58.com/ershoufang/38726188628754x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>上四月天小学园田花园精装大三房电梯房 </td>
+                <td>3室2厅1卫105㎡南北低层(共21层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>11428元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38631368558242x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>用钱急售 省委党校精装双气</td>
+                <td>3室2厅1卫105㎡南北中层(共7层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>13809元/㎡</td>
+                <td>河南省委党校家属院金水经七路距离5号线郑州人民医院地铁站542米</td>
+                <td>https://zz.58.com/ershoufang/38266460296974x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经典三房，多层三楼，</td>
+                <td>3室2厅1卫94㎡南中层(共7层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>12765元/㎡</td>
+                <td>圣地花园金水丰庆路</td>
+                <td>https://zz.58.com/ershoufang/38642484340640x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三十，一中旁精装</td>
+                <td>3室2厅2卫130.5㎡南中层(共7层)</td>
+                <td>南北通透130万</td>
+                <td>-</td>
+                <td>9961元/㎡</td>
+                <td>天明路16号院金水天明路16号距离5号线海滩寺地铁站1024米</td>
+                <td>https://zz.58.com/ershoufang/38729626551061x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>农业路经三路 报业公寓 精装双气3室 </td>
+                <td>3室2厅1卫110㎡南北中层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12727元/㎡</td>
+                <td>河南报业公寓金水经二路北33号距离2号线关虎屯地铁站1347米</td>
+                <td>https://zz.58.com/ershoufang/38198651096076x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>恒升府第 电梯房 </td>
+                <td>3室2厅1卫105㎡南北共5层</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>15238元/㎡</td>
+                <td>恒升府第金水晨旭路10号</td>
+                <td>https://zz.58.com/ershoufang/38630169721987x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东风路 轻工业学院家属院 双气三房 </td>
+                <td>3室2厅1卫93㎡南北高层(共6层)</td>
+                <td>南北通透125万</td>
+                <td>-</td>
+                <td>13440元/㎡</td>
+                <td>郑州轻工业学院家属院金水东风路</td>
+                <td>https://zz.58.com/ershoufang/38698719413005x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>开祥御龙城 绿荫公园对面 人车分流小区 </td>
+                <td>3室1厅1卫92.2㎡南中层(共33层)</td>
+                <td>BCDFGHJKLMNSTWXYZ其他南北通透138万</td>
+                <td>-</td>
+                <td>14967元/㎡</td>
+                <td>开祥御龙城金水天明路82号</td>
+                <td>//short.58.com/zd_p/c559494d-4742-42d7-92f1-bd4d88bf4b4c/?target=hh-16-xgk_psfegvimob_86039195548078q-feykn&end=end</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>哇！出门人民公园，均价12000，双卫大三房，南 </td>
+                <td>3室2厅2卫120㎡南北高层(共26层)</td>
+                <td>140万</td>
+                <td>-</td>
+                <td>11666元/㎡</td>
+                <td>金峰金岸国际金水西太康路距离1号线二七广场地铁站854米</td>
+                <td>//short.58.com/zd_p/409111d7-81c1-4b18-a7a3-1e4353367398/?target=hh-16-xgk_psfegvimob_86036551152619q-feykn&end=end</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路地铁口   成熟花园社区  精装双气</td>
+                <td>3室2厅1卫104㎡南北中层(共7层)</td>
+                <td>通透146.9万</td>
+                <td>-</td>
+                <td>14125元/㎡</td>
+                <td>富田丽景花园金水南阳路226号</td>
+                <td>https://zz.58.com/ershoufang/38670162208918x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路农业路 1楼带花园 05年社区院大好停车  </td>
+                <td>3室2厅2卫130.92㎡南北低层(共7层)</td>
+                <td>148万</td>
+                <td>-</td>
+                <td>11304元/㎡</td>
+                <td>瑞丰园金水南阳路284号距离5号线海滩寺地铁站938米</td>
+                <td>https://zz.58.com/ershoufang/38532492118284x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经七路农业路 临近博物馆  4楼双气三房 </td>
+                <td>3室2厅1卫105㎡南北中层(共6层)</td>
+                <td>通透120万</td>
+                <td>-</td>
+                <td>11428元/㎡</td>
+                <td>海燕出版社家属院金水经七路21号距离2号线关虎屯地铁站969米</td>
+                <td>https://zz.58.com/ershoufang/38683214461849x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>二十一世纪湖适 </td>
+                <td>3室2厅1卫101㎡南北中层(共6层)</td>
+                <td>通透132万</td>
+                <td>-</td>
+                <td>13069元/㎡</td>
+                <td>21世纪社区湖适金水郑花路距离2号线沙门地铁站1088米</td>
+                <td>https://zz.58.com/ershoufang/38651689738882x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东风渠畔皇宫旁多层二楼</td>
+                <td>3室2厅1卫100㎡南北低层(共7层)</td>
+                <td>通透123万</td>
+                <td>-</td>
+                <td>12300元/㎡</td>
+                <td>东文雅小区金水经三路84号距离2号线北三环地铁站997米</td>
+                <td>https://zz.58.com/ershoufang/38726733934745x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文化路地铁旁，双气社区，地质勘察院家属院，多层通 </td>
+                <td>3室2厅1卫99㎡南北中层(共6层)</td>
+                <td>135万</td>
+                <td>-</td>
+                <td>13636元/㎡</td>
+                <td>地质勘察院家属院金水文化路76号距离2号线北三环地铁站1463米</td>
+                <td>https://zz.58.com/ershoufang/38608035080852x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>中州地铁口  小三房 精装</td>
+                <td>3室2厅1卫94㎡南北低层(共33层)</td>
+                <td>通透135万</td>
+                <td>-</td>
+                <td>14361元/㎡</td>
+                <td>维也纳森林金水中州大道</td>
+                <td>https://zz.58.com/ershoufang/38353677134476x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>业主出国急售  一楼带40平方院 </td>
+                <td>3室2厅1卫122.31㎡南北低层(共7层)</td>
+                <td>通透140万</td>
+                <td>-</td>
+                <td>11446元/㎡</td>
+                <td>瑞丰园金水南阳路284号距离5号线海滩寺地铁站938米</td>
+                <td>https://zz.58.com/ershoufang/38706568997795x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>4号线地铁口，首付15万，</td>
+                <td>3室2厅2卫124㎡南北中层(共6层)</td>
+                <td>通透160万</td>
+                <td>-</td>
+                <td>12903元/㎡</td>
+                <td>圣地花园金水丰庆路</td>
+                <td>https://zz.58.com/ershoufang/38671748465545x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五年，户型方正，</td>
+                <td>3室2厅1卫118㎡南北高层(共18层)</td>
+                <td>南北通透157万</td>
+                <td>-</td>
+                <td>13305元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38707683893405x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>，户型方正，精装修，家具家电全送，交通方 </td>
+                <td>3室2厅1卫92㎡南北低层(共11层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>15760元/㎡</td>
+                <td>普罗旺世佛罗伦斯金水索凌路</td>
+                <td>https://zz.58.com/ershoufang/38642126093218x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>火爆出炉 低于市场20万 开祥</td>
+                <td>3室2厅1卫92.55㎡南北高层(共33层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>15667元/㎡</td>
+                <td>开祥御龙城金水天明路82号</td>
+                <td>https://zz.58.com/ershoufang/38065243221787x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>锦艺金水湾 </td>
+                <td>3室2厅1卫89.0㎡南高层(共34层)</td>
+                <td>南北通透121万</td>
+                <td>-</td>
+                <td>13595元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38638647353616x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>丰庆路三全路安泰金苑一梯两户</td>
+                <td>3室2厅1卫99㎡南北中层(共6层)</td>
+                <td>南北通透125万</td>
+                <td>-</td>
+                <td>12626元/㎡</td>
+                <td>安泰金苑金水三全路86号</td>
+                <td>https://zz.58.com/ershoufang/38643078847398x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>多层一梯两户，125平</td>
+                <td>3室2厅1卫125.00㎡南北中层(共6层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>12000元/㎡</td>
+                <td>四月天小区金水国基路102号</td>
+                <td>https://zz.58.com/ershoufang/38482803826321x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>国贸地铁，博物馆 稀有一楼，精装修大三房 </td>
+                <td>3室2厅1卫110㎡南北低层(共7层)</td>
+                <td>南北125万</td>
+                <td>-</td>
+                <td>11363元/㎡</td>
+                <td>省外贸轻工公司家属院金水农业路67号距离2号线关虎屯地铁站1164米</td>
+                <td>https://zz.58.com/ershoufang/38674005987858x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>阳光嘉苑，首付20万，大型社区多层三房，</td>
+                <td>3室2厅1卫112㎡南北高层(共6层)</td>
+                <td>南北通透125万</td>
+                <td>-</td>
+                <td>11160元/㎡</td>
+                <td>阳光嘉苑金水国基路99号</td>
+                <td>https://zz.58.com/ershoufang/38376666705552x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>5号线地铁口 绿苑小区 精装双气大三房 </td>
+                <td>3室2厅1卫117㎡南北低层(共6层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>12820元/㎡</td>
+                <td>绿苑小区金水沙口路距离5号线沙口路地铁站586米</td>
+                <td>https://zz.58.com/ershoufang/38674359115537x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>国基路阳光嘉苑，首付18万，</td>
+                <td>3室2厅1卫123㎡南北中层(共6层)</td>
+                <td>南北通透142万</td>
+                <td>-</td>
+                <td>11544元/㎡</td>
+                <td>阳光嘉苑金水国基路99号</td>
+                <td>https://zz.58.com/ershoufang/38486852587676x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>大户人家 花园双气多层洋房 </td>
+                <td>3室2厅1卫93㎡南北中层(共6层)</td>
+                <td>南北通透155万</td>
+                <td>-</td>
+                <td>16666元/㎡</td>
+                <td>思达大户人家金水天明路90号</td>
+                <td>https://zz.58.com/ershoufang/38538718288273x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>金水区委家属院 一楼带60平院子 </td>
+                <td>3室2厅1卫101㎡南北低层(共7层)</td>
+                <td>南北通透141.5万</td>
+                <td>-</td>
+                <td>14009元/㎡</td>
+                <td>金水区区委家属院金水花园路160号距离2号线北三环地铁站331米</td>
+                <td>https://zz.58.com/ershoufang/38572103378828x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>A绿苑小区 精装修</td>
+                <td>3室2厅1卫122.00㎡南北中层(共6层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>11885元/㎡</td>
+                <td>绿苑小区金水沙口路距离5号线沙口路地铁站586米</td>
+                <td>https://zz.58.com/ershoufang/38609940020121x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>未来路商城路丹尼斯超市首座国际 精装三 </td>
+                <td>3室2厅2卫117㎡南北高层(共31层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>13675元/㎡</td>
+                <td>首座国际公寓金水未来路距离1号线燕庄地铁站1153米</td>
+                <td>https://zz.58.com/ershoufang/37237479624342x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>北三环 文化路</td>
+                <td>3室2厅1卫97㎡南北低层(共33层)</td>
+                <td>南北通透156万</td>
+                <td>-</td>
+                <td>16082元/㎡</td>
+                <td>瀚海泰苑金水北三环</td>
+                <td>https://zz.58.com/ershoufang/38663921936678x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>四号线附件 首付30万，正商物业，电梯小高层，南 </td>
+                <td>3室2厅1卫126.7㎡南北低层(共18层)</td>
+                <td>153万</td>
+                <td>-</td>
+                <td>12075元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38726731177860x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>阳光假日 电梯房 </td>
+                <td>3室2厅1卫128.0㎡南北低层(共12层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>12500元/㎡</td>
+                <td>阳光假日金水南阳路</td>
+                <td>https://zz.58.com/ershoufang/38609451853982x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>03年精装3房，文化路二小隔壁，首付18万，</td>
+                <td>3室2厅1卫106.5㎡南北中层(共7层)</td>
+                <td>南北126万</td>
+                <td>-</td>
+                <td>11830元/㎡</td>
+                <td>文苑骏景金水文化路23号距离5号线郑州人民医院地铁站311米</td>
+                <td>https://zz.58.com/ershoufang/38676017926277x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>花园路地铁口 首付19万 精装 </td>
+                <td>3室2厅1卫115㎡南低层(共32层)</td>
+                <td>南北通透135万</td>
+                <td>-</td>
+                <td>11739元/㎡</td>
+                <td>瀚海晴洲金水国基路距离2号线沙门地铁站816米</td>
+                <td>https://zz.58.com/ershoufang/38626998117775x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>不限购，法拍房，北三环文化路</td>
+                <td>3室2厅1卫97.03㎡南北低层(共32层)</td>
+                <td>南北通透128万</td>
+                <td>-</td>
+                <td>13191元/㎡</td>
+                <td>金晨嘉园金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38118651609485x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>金印阳光城 精装大三房 业主急卖  </td>
+                <td>3室2厅1卫112㎡南中层(共18层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12500元/㎡</td>
+                <td>金印阳光城金水宏明路距离2号线沙门地铁站1002米</td>
+                <td>https://zz.58.com/ershoufang/38132732861597x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>业主急卖，黄河路东三街，首付22万买，刚需温馨3 </td>
+                <td>3室2厅1卫117㎡南北中层(共7层)</td>
+                <td>132万</td>
+                <td>-</td>
+                <td>11282元/㎡</td>
+                <td>贸易厅1号院金水同乐路10号距离5号线郑州人民医院地铁站750米</td>
+                <td>https://zz.58.com/ershoufang/38663922045336x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>郑汴路玉凤路 三号线地铁口 检察院家属院 </td>
+                <td>3室2厅1卫113㎡南北高层(共7层)</td>
+                <td>南北140万</td>
+                <td>-</td>
+                <td>12389元/㎡</td>
+                <td>河南省检察院家属院南院金水凤鸣路</td>
+                <td>https://zz.58.com/ershoufang/38518051184285x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>海洋馆附近，首付20万，正商物业，电梯小高层，南 </td>
+                <td>3室2厅1卫115㎡南北中层(共21层)</td>
+                <td>129万</td>
+                <td>-</td>
+                <td>11217元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38727030719909x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路农业路 紧邻地铁口 精装</td>
+                <td>3室2厅2卫122.31㎡南北低层(共7层)</td>
+                <td>南北通透142万</td>
+                <td>-</td>
+                <td>11609元/㎡</td>
+                <td>瑞丰园金水南阳路284号距离5号线海滩寺地铁站938米</td>
+                <td>https://zz.58.com/ershoufang/38398467178247x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>正商园田花园精装三房，中间楼层，</td>
+                <td>3室2厅1卫105.83㎡南北中层(共18层)</td>
+                <td>南北通透124万</td>
+                <td>-</td>
+                <td>11716元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38698688703747x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>正弘春晓，精装三房，有暖气，</td>
+                <td>3室2厅1卫98.38㎡南北中层(共28层)</td>
+                <td>南北通透128万</td>
+                <td>-</td>
+                <td>13010元/㎡</td>
+                <td>正弘春晓金水索凌路</td>
+                <td>https://zz.58.com/ershoufang/38604602287002x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>贾鲁河旁 锦艺金水湾 </td>
+                <td>3室2厅2卫120㎡南中层(共34层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>13333元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38527841318678x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>省医 省直姚寨小区 精装3房 首付28万 </td>
+                <td>3室2厅1卫84㎡南北高层(共7层)</td>
+                <td>南北120万</td>
+                <td>-</td>
+                <td>14285元/㎡</td>
+                <td>河南省直姚寨小区金水红旗路134号距离5号线姚砦地铁站601米</td>
+                <td>https://zz.58.com/ershoufang/38615682677156x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>花园路丹尼斯附近</td>
+                <td>3室2厅1卫119㎡南北高层(共7层)</td>
+                <td>南北通透146万</td>
+                <td>-</td>
+                <td>12268元/㎡</td>
+                <td>河南省工艺美术学校家属院金水畜牧路6号距离2号线东风路地铁站743米</td>
+                <td>https://zz.58.com/ershoufang/38583184076951x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文三 47中 均价一万一平 O首咐买三环内 </td>
+                <td>3室2厅1卫120㎡南北中层(共7层)</td>
+                <td>南北120万</td>
+                <td>-</td>
+                <td>10000元/㎡</td>
+                <td>中方园东区金水园田路</td>
+                <td>https://zz.58.com/ershoufang/38726670973480x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>急，南阳路农业路 首付25万 11年精装修，</td>
+                <td>3室2厅1卫130㎡南北高层(共27层)</td>
+                <td>南北152万</td>
+                <td>-</td>
+                <td>11692元/㎡</td>
+                <td>茂鑫公寓金水孟砦北街7号距离5号线海滩寺地铁站1106米</td>
+                <td>https://zz.58.com/ershoufang/38671464521478x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装双气 </td>
+                <td>3室2厅2卫131.03㎡南北中层(共6层)</td>
+                <td>南北通透158万</td>
+                <td>-</td>
+                <td>12058元/㎡</td>
+                <td>瑞景花园金水国基路108号</td>
+                <td>https://zz.58.com/ershoufang/38540174095897x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文化路锦艺金水湾一期，</td>
+                <td>3室2厅1卫89㎡南高层(共34层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>13483元/㎡</td>
+                <td>锦艺金水湾观澜苑金水文化路</td>
+                <td>https://zz.58.com/ershoufang/38696072600099x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东风路园田路 园田小区 精装</td>
+                <td>3室2厅2卫150㎡南北低层(共6层)</td>
+                <td>南北通透152万</td>
+                <td>-</td>
+                <td>10133元/㎡</td>
+                <td>园田小区金水园田路</td>
+                <td>https://zz.58.com/ershoufang/38408152057761x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>阳光嘉苑 精装修 采光好 </td>
+                <td>3室2厅1卫108㎡南北低层(共6层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>13888元/㎡</td>
+                <td>阳光嘉苑金水国基路99号</td>
+                <td>https://zz.58.com/ershoufang/38210908927781x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>邻国贸，近纬五路一小八中，精装</td>
+                <td>3室2厅1卫120㎡南北中层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>11666元/㎡</td>
+                <td>经五路15号院金水经五路15号距离2号线黄河路地铁站608米</td>
+                <td>https://zz.58.com/ershoufang/38308917673346x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>瑞景花园</td>
+                <td>3室2厅2卫109.35㎡南北高层(共6层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>12802元/㎡</td>
+                <td>瑞景花园金水国基路108号</td>
+                <td>https://zz.58.com/ershoufang/38508329847969x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>地铁4号线 四月天小学 精装双气三房 </td>
+                <td>3室2厅1卫113㎡南北低层(共20层)</td>
+                <td>南北通透146万</td>
+                <td>-</td>
+                <td>12920元/㎡</td>
+                <td>正商园田花园金水丰庆路63号</td>
+                <td>https://zz.58.com/ershoufang/38715661838376x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>丰乐花苑，绿荫公园森林半岛旁，</td>
+                <td>3室2厅2卫120㎡南高层(共6层)</td>
+                <td>南北通透152万</td>
+                <td>-</td>
+                <td>12666元/㎡</td>
+                <td>丰乐花苑金水天明路95号</td>
+                <td>https://zz.58.com/ershoufang/38532571739540x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三环内 长基花园 人车分流 </td>
+                <td>3室2厅2卫125.90㎡南北中层(共33层)</td>
+                <td>南北通透160万</td>
+                <td>-</td>
+                <td>12708元/㎡</td>
+                <td>豫军长基花园金水博颂路</td>
+                <td>https://zz.58.com/ershoufang/38608024294803x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>急！思达大户人家 稀有复式送露台 精装修</td>
+                <td>3室2厅1卫95㎡南北高层(共7层)</td>
+                <td>南北通透120万</td>
+                <td>-</td>
+                <td>12631元/㎡</td>
+                <td>思达大户人家金水天明路90号</td>
+                <td>https://zz.58.com/ershoufang/38716062620037x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>业主急售 随时看房 博宇晴城 电梯房 </td>
+                <td>3室2厅1卫116.31㎡南北高层(共18层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>12896元/㎡</td>
+                <td>博宇晴城金水普庆路,近新村路</td>
+                <td>https://zz.58.com/ershoufang/38685627554694x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>和昌悦澜 毛坯 特便宜的一套 </td>
+                <td>3室2厅1卫89㎡南低层(共27层)</td>
+                <td>南北通透138万</td>
+                <td>-</td>
+                <td>15505元/㎡</td>
+                <td>和昌悦澜南苑金水宏康路67号距离2号线刘庄地铁站674米</td>
+                <td>https://zz.58.com/ershoufang/38383547108005x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路林荫大道小区，多层</td>
+                <td>3室2厅1卫118㎡南高层(共6层)</td>
+                <td>南北通透150万</td>
+                <td>-</td>
+                <td>12711元/㎡</td>
+                <td>林荫大道小区金水南阳路212号</td>
+                <td>https://zz.58.com/ershoufang/38626820433170x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>汉飞城市公园均价1.2 新出多层 </td>
+                <td>3室2厅2卫120㎡南北中层(共6层)</td>
+                <td>南北通透145万</td>
+                <td>-</td>
+                <td>12083元/㎡</td>
+                <td>汉飞城市公园西区金水宏明路距离2号线柳林地铁站916米</td>
+                <td>https://zz.58.com/ershoufang/38598645178887x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>经七路。商务厅家属院 精装 双气 3房 </td>
+                <td>3室1厅1卫100㎡南北中层(共7层)</td>
+                <td>南北通透140万</td>
+                <td>-</td>
+                <td>14000元/㎡</td>
+                <td>河南省商务厅家属院金水经七路15-4号距离5号线郑州人民医院地铁站1002米</td>
+                <td>https://zz.58.com/ershoufang/38697407617158x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路东风路 富田丽景花园 双气小三房 双地铁  </td>
+                <td>3室2厅1卫110㎡南北低层(共6层)</td>
+                <td>150万</td>
+                <td>-</td>
+                <td>13636元/㎡</td>
+                <td>富田丽景花园金水南阳路226号</td>
+                <td>https://zz.58.com/ershoufang/38715276700451x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>新出3房  </td>
+                <td>3室2厅2卫115㎡南北中层(共7层)</td>
+                <td>南北通透146万</td>
+                <td>-</td>
+                <td>12695元/㎡</td>
+                <td>正商北云鹤金水广电南路10号距离2号线北三环地铁站475米</td>
+                <td>https://zz.58.com/ershoufang/38674201397507x.shtml?utm_source=&spm=</td>
+                <td>58同城</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>急售 思达8号院 低层 准三房 精装带壁挂炉 双阳台 随时看</td>
+                <td>3室1厅100m²低层(共7层)2000年建造</td>
+                <td>130万</td>
+                <td>-</td>
+                <td>13000元/m²</td>
+                <td>思达8号院                      金水-大石桥-卫生路33号附37号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759126990?from=filter&spread=filtersearch&invalid=1&uniqid=pc5d2316b0134f21.10148998®ion_ids=3114&position=1&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>北三环，首付25万，双气全明三房，2010年小区，交通便利</td>
+                <td>3室2厅97m²中层(共18层)2010年建造</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>12371元/m²</td>
+                <td>正弘春晓                      金水-绿荫广场-索凌路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1748375380?from=filter-salesxq&spread=filtersearch&invalid=1&uniqid=pc5d2316b01350f8.14951219®ion_ids=3114&position=2&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>富田丽景隔壁一楼大三房均价低</td>
+                <td>3室2厅128m²低层(共7层)1998年建造</td>
+                <td>145万</td>
+                <td>-</td>
+                <td>11328元/m²</td>
+                <td>开元小区                      金水-南阳路-南阳路230号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1760338425?from=filter&spread=filtersearch&invalid=1&uniqid=pc5d2316b01351e9.03123726®ion_ids=3114&position=3&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东风路 南阳路 地铁三号线，精装三房，随时看房 业主急售.</td>
+                <td>3室2厅93m²低层(共6层)2005年建造</td>
+                <td>125万</td>
+                <td>-</td>
+                <td>13441元/m²</td>
+                <td>阳光假日                      金水-南阳路-南阳路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759935749?from=filter&spread=filtersearch&invalid=1&uniqid=pc5d2316b0135291.82448863®ion_ids=3114&position=4&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东风路南阳路地贴口，双气精装，南北通透大三房，环境好，有绿化</td>
+                <td>3室2厅117m²低层(共6层)2004年建造</td>
+                <td>150万</td>
+                <td>-</td>
+                <td>12821元/m²</td>
+                <td>富田丽景花园                      金水-南阳路-南阳路226号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1758573953?from=filter&spread=filtersearch&invalid=1&uniqid=pc5d2316b0135343.31621415®ion_ids=3114&position=5&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付20万火车站旁10年电梯三房精装修楼下地铁口急</td>
+                <td>3室2厅120m²高层(共26层)2010年建造</td>
+                <td>135万</td>
+                <td>-</td>
+                <td>11250元/m²</td>
+                <td>金峰金岸国际                      金水-21世纪社区-西太康路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1760146050?from=filter-saleMetro&spread=filtersearch&invalid=1&uniqid=pc5d2316b01353e2.53681594®ion_ids=3114&position=6&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>08年，120平，135万，沙口路，雅阁思达，3房2卫</td>
+                <td>3室2厅120m²高层(共6层)2008年建造</td>
+                <td>135万</td>
+                <td>-</td>
+                <td>11250元/m²</td>
+                <td>雅阁思达                      金水-大石桥-二环支路11号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1755975338?from=filter&spread=filtersearch&invalid=1&uniqid=pc5d2316b0135482.69131653®ion_ids=3114&position=7&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>天明路东风路绿荫广场 精装双气三房 家具家电齐全 首付25</td>
+                <td>3室1厅92m²中层(共32层)2014年建造</td>
+                <td>130万</td>
+                <td>-</td>
+                <td>14130元/m²</td>
+                <td>开祥御龙城                      金水-东风路-天明路82号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1758564459?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135501.32081150®ion_ids=3114&position=8&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>金水区索凌路正弘春晓简装   快速出售</td>
+                <td>3室2厅95m²低层(共33层)2010年建造</td>
+                <td>126万</td>
+                <td>-</td>
+                <td>13213元/m²</td>
+                <td>正弘春晓                      金水-绿荫广场-索凌路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1748364050?from=filter-salesxq&spread=filtersearch_t&uniqid=pc5d2316b0135570.07210069®ion_ids=3114&position=9&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>康桥朗城 房本在手 人脸识别 新风系统 包税急卖</td>
+                <td>3室2厅89m²低层(共26层)2016年建造</td>
+                <td>121万</td>
+                <td>-</td>
+                <td>13596元/m²</td>
+                <td>康桥朗城                      金水-花园路-宏康路,近花园北路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1754396936?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01355e5.61208417®ion_ids=3114&position=10&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付15万买南阳路地铁口05年精装一楼三房带40平方园加车位</td>
+                <td>3室2厅120m²低层(共7层)2005年建造</td>
+                <td>145万</td>
+                <td>-</td>
+                <td>12083元/m²</td>
+                <td>盛煌满庭芳                      金水-南阳路-孟砦北街14号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759172319?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135653.17470949®ion_ids=3114&position=11&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三环内双气三房！首付23万，真是价位，真实照片</td>
+                <td>3室2厅97m²高层(共33层)2010年建造</td>
+                <td>135.5万</td>
+                <td>-</td>
+                <td>13969元/m²</td>
+                <td>正弘春晓                      金水-绿荫广场-索凌路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759226629?from=filter-salesxq&spread=filtersearch_t&uniqid=pc5d2316b01356c4.45202343®ion_ids=3114&position=12&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>劲爆，经七路红专路，商务厅家属院，精装双气3房，拎包入住，真</td>
+                <td>3室2厅109m²中层(共7层)1998年建造</td>
+                <td>148万</td>
+                <td>-</td>
+                <td>13578元/m²</td>
+                <td>河南省商务厅家属院                      金水-丰产路-经七路15-4号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1753016565?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135735.51337174®ion_ids=3114&position=13&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>超劲爆！青年公园正对面 精装三房 户型好 首付6万 房源真实</td>
+                <td>3室2厅117m²高层(共7层)1998年建造</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>10256元/m²</td>
+                <td>天明路16号院                      金水-天明路-天明路16号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759187842?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01357a5.49686370®ion_ids=3114&position=14&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>亚新美好时光旁 精装3房2厅2卫 满五无税首付25万业主急卖</td>
+                <td>3室2厅107m²中层(共6层)2005年建造</td>
+                <td>138.8万</td>
+                <td>-</td>
+                <td>12972元/m²</td>
+                <td>林荫大道小区                      金水-南阳路-南阳路212号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1745985429?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135816.34760710®ion_ids=3114&position=15&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>富寓雅居双气 低于市场价10万 养老二楼 南北通透 停车方便</td>
+                <td>3室2厅118m²低层(共7层)2008年建造</td>
+                <td>140万</td>
+                <td>-</td>
+                <td>11864元/m²</td>
+                <td>富寓雅居                      金水-丰乐路-丰乐路6号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1747360108?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135875.48254924®ion_ids=3114&position=16&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>北三环东风路 天明路 绿荫公园 天旺广场 中医院 开祥御龙城</td>
+                <td>3室2厅92m²中层(共32层)2015年建造</td>
+                <td>145万</td>
+                <td>-</td>
+                <td>15732元/m²</td>
+                <td>开祥御龙城                      金水-东风路-天明路82号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759469854?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01358e7.81473480®ion_ids=3114&position=17&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路 农业路 地铁口 海棠园 精装3房 南北通透 随时看房</td>
+                <td>3室2厅106m²中层(共7层)2005年建造</td>
+                <td>130万</td>
+                <td>-</td>
+                <td>12264元/m²</td>
+                <td>海棠园                      金水-南阳路-孟寨北街11号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1749071400?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135948.34599911®ion_ids=3114&position=18&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>文化路北三环江山名典精装小三房首付20万 文源学小看房有钥匙</td>
+                <td>3室1厅104m²高层(共11层)2006年建造</td>
+                <td>136万</td>
+                <td>-</td>
+                <td>13077元/m²</td>
+                <td>江山名典                      金水-北环路-博颂路16号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1757979147?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135a74.48679620®ion_ids=3114&position=19&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>政七街丰产路，一楼双气小三房，南北通透，采光好，总价低，急售</td>
+                <td>3室2厅98m²低层(共7层)1999年建造</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>12245元/m²</td>
+                <td>政七街红专路小区                      金水-黄河路-政七街</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1754802120?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135ae0.84123935®ion_ids=3114&position=20&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>瑞龙城 5号线口 83平标准三房 双气精装修 丹尼斯交通便利</td>
+                <td>3室2厅83m²低层(共18层)2009年建造</td>
+                <td>136万</td>
+                <td>-</td>
+                <td>16386元/m²</td>
+                <td>瑞隆城                      金水-大石桥-沙口路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1758181536?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135b46.91291078®ion_ids=3114&position=21&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>急卖！思达8号院！精装三房！楼层好！低于市场价15万！环境好</td>
+                <td>3室1厅110m²低层(共7层)2002年建造</td>
+                <td>130万</td>
+                <td>-</td>
+                <td>11818元/m²</td>
+                <td>思达8号院                      金水-大石桥-卫生路33号附37号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1758134208?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135bb0.90098692®ion_ids=3114&position=22&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>康桥朗城 新北站 地铁口 南北通透小三室 随时看房 业主急售</td>
+                <td>3室2厅89m²中层(共26层)2015年建造</td>
+                <td>125万</td>
+                <td>-</td>
+                <td>14045元/m²</td>
+                <td>康桥朗城                      金水-花园路-宏康路,近花园北路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1757972086?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135c12.74248972®ion_ids=3114&position=23&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>省中医院附近文化绿城學区房南北通透双气大三房 带20平地下室</td>
+                <td>3室2厅128m²高层(共7层)2002年建造</td>
+                <td>140万</td>
+                <td>-</td>
+                <td>10938元/m²</td>
+                <td>省会教师生活园区                      金水-中医院-丰庆路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1756167197?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135c73.42783887®ion_ids=3114&position=24&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>北三环花园路地铁口 锦绣汇城标准三室两厅两卫 三层复式 急售</td>
+                <td>3室2厅88m²高层(共11层)2008年建造</td>
+                <td>135万</td>
+                <td>-</td>
+                <td>15341元/m²</td>
+                <td>锦绣汇城                      金水-花园路-北环路61号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1751513930?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135ce0.56089901®ion_ids=3114&position=25&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>康桥朗城 89平135万 业主急售 随时看房 只此一套错过无</td>
+                <td>3室2厅89m²低层(共26层)2015年建造</td>
+                <td>135万</td>
+                <td>-</td>
+                <td>15169元/m²</td>
+                <td>康桥朗城                      金水-花园路-宏康路,近花园北路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1758742785?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135d45.78486558®ion_ids=3114&position=26&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>丰庆路三全路，正商园田花园，直降18万，四月天小学，地铁口。</td>
+                <td>3室2厅117m²高层(共21层)2009年建造</td>
+                <td>140万</td>
+                <td>-</td>
+                <td>11966元/m²</td>
+                <td>正商园田花园                      金水-丰庆路-丰庆路63号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759122846?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135da5.08418059®ion_ids=3114&position=27&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>南阳路地铁口 精装三房一楼带院 公园旁二环内 配套齐全 急售</td>
+                <td>3室2厅121m²低层(共7层)2005年建造</td>
+                <td>150万</td>
+                <td>-</td>
+                <td>12397元/m²</td>
+                <td>盛煌满庭芳                      金水-南阳路-孟砦北街14号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1749058688?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135e00.90085073®ion_ids=3114&position=28&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付8万均价一万买农业路沿线精装霸气三房南北通透紧邻绿城小学</td>
+                <td>3室2厅121m²中层(共7层)2000年建造</td>
+                <td>123万</td>
+                <td>-</td>
+                <td>10165元/m²</td>
+                <td>省民政学校家属院                      金水-丰庆路-丰庆路10号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1758064321?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135e70.44044115®ion_ids=3114&position=29&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>中州大道 非常国际一期 精装 三室一厅 送家具家电 满屋唯一</td>
+                <td>3室2厅92m²中层(共27层)2009年建造</td>
+                <td>133万</td>
+                <td>-</td>
+                <td>14457元/m²</td>
+                <td>非常国际                      金水-中州大道-德亿路6号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1751248043?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135ed3.78409423®ion_ids=3114&position=30&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>劲爆！汉飞精装三房，加地暖，送12平露台，朝南，全明户型，急</td>
+                <td>3室1厅105m²低层(共31层)2010年建造</td>
+                <td>140万</td>
+                <td>-</td>
+                <td>13295元/m²</td>
+                <td>汉飞金沙国际                      金水-沙口路-沙口路1号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759211733?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135f35.98526756®ion_ids=3114&position=31&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>大石桥 防疫路 晖达优胜小区双气三房上优胜路小学 临近地铁口</td>
+                <td>3室1厅85m²高层(共7层)1998年建造</td>
+                <td>125万</td>
+                <td>-</td>
+                <td>14706元/m²</td>
+                <td>优胜小区                      金水-大石桥-优胜南路8号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1755601163?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0135fa5.90464136®ion_ids=3114&position=32&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付15万买南阳路地铁口120平大3房 满五无税业主换房急卖</td>
+                <td>3室2厅120m²高层(共7层)2005年建造</td>
+                <td>140.8万</td>
+                <td>-</td>
+                <td>11733元/m²</td>
+                <td>林荫大道小区                      金水-南阳路-南阳路212号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1756405780?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136004.31954275®ion_ids=3114&position=33&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>天旺广场 开祥御龙城 精装双气小三房！首付20万 随时看房</td>
+                <td>3室1厅83m²中层(共33层)2014年建造</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>14458元/m²</td>
+                <td>开祥御龙城                      金水-东风路-天明路82号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1745915908?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136069.33403823®ion_ids=3114&position=34&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付20万，精装双气大三房，主卧带大阳台，出门地铁口，急售</td>
+                <td>3室2厅98m²高层(共11层)2012年建造</td>
+                <td>142万</td>
+                <td>-</td>
+                <td>14490元/m²</td>
+                <td>华林都市家园                      金水-南阳路-农业路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1754922387?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01360c2.19638525®ion_ids=3114&position=35&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>沙口路汉飞金沙精装三房急售紧邻地铁口小区配套完善</td>
+                <td>3室1厅89m²低层(共33层)2012年建造</td>
+                <td>145万</td>
+                <td>-</td>
+                <td>16292元/m²</td>
+                <td>汉飞金沙国际                      金水-沙口路-沙口路1号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1758988897?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136135.29721847®ion_ids=3114&position=36&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>（两房价买三房）进军三环學区房，中海旁边西文雅南北通透急售</td>
+                <td>3室2厅85m²中层(共6层)2000年建造</td>
+                <td>122万</td>
+                <td>-</td>
+                <td>14353元/m²</td>
+                <td>文雅小区                      金水-中医院-田园路16号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1756167057?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136191.11075546®ion_ids=3114&position=37&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>北龙湖 凤山100米 92全新精装三房，小高层，南北通透</td>
+                <td>3室1厅92m²中层(共15层)2012年建造</td>
+                <td>126万</td>
+                <td>-</td>
+                <td>13696元/m²</td>
+                <td>天伦琥珀名城                      金水-花园路-天伦路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1742175582?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01361f7.91735036®ion_ids=3114&position=38&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付加费用25万（文化路黄河路）双气3房（2010年建成）</td>
+                <td>3室1厅109m²高层(共32层)2010年建造</td>
+                <td>135万</td>
+                <td>-</td>
+                <td>12351元/m²</td>
+                <td>广厦城市之巅                      金水-文化路-红旗路30号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1757329652?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136269.75173127®ion_ids=3114&position=39&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>真实 万象城旁 首付20万，无税大三房，楼下地铁口</td>
+                <td>3室2厅120m²高层(共26层)2010年建造</td>
+                <td>138万</td>
+                <td>-</td>
+                <td>11500元/m²</td>
+                <td>金峰金岸国际                      金水-21世纪社区-西太康路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759063373?from=filter-saleMetro&spread=filtersearch_t&uniqid=pc5d2316b01362c7.61247089®ion_ids=3114&position=40&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>康桥朗城一号院 南北通透三房 只此一套 看房带上定金</td>
+                <td>3室2厅89m²中层(共26层)2015年建造</td>
+                <td>125万</td>
+                <td>-</td>
+                <td>14045元/m²</td>
+                <td>康桥朗城                      金水-花园路-宏康路,近花园北路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759020308?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136332.39944451®ion_ids=3114&position=41&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>眞实在售,假一罚万丨业主公司缺口诚心卖房丨可看实房丨急售</td>
+                <td>3室2厅89m²中层(共26层)2015年建造</td>
+                <td>125万</td>
+                <td>-</td>
+                <td>14045元/m²</td>
+                <td>康桥朗城                      金水-花园路-宏康路,近花园北路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759151565?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136398.01729315®ion_ids=3114&position=42&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>均价1万买大石桥市中心精装三房铂金地段紧邻丹尼斯人民公园</td>
+                <td>3室2厅118m²高层(共7层)2000年建造</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>10169元/m²</td>
+                <td>中亨花园二号院                      金水-金水路-南阳路307号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1751939911?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01363f1.57283791®ion_ids=3114&position=43&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>低于市场价10万，花园路三全路地铁口精装修，花时代100平</td>
+                <td>3室2厅100m²高层(共32层)2009年建造</td>
+                <td>122万</td>
+                <td>-</td>
+                <td>12200元/m²</td>
+                <td>花半里东区                      金水-花园路-花园路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1758111441?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136451.57647162®ion_ids=3114&position=44&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>康桥朗城 纯南三室 新风系统 连廊设计 随时看房 业主急售</td>
+                <td>3室2厅89m²中层(共26层)2015年建造</td>
+                <td>129万</td>
+                <td>-</td>
+                <td>14494元/m²</td>
+                <td>康桥朗城                      金水-花园路-宏康路,近花园北路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1757806163?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01364b5.01156718®ion_ids=3114&position=45&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付20万 丰乐路思达8号院 2楼通透三房 二环内大社区</td>
+                <td>3室2厅100m²低层(共65层)2000年建造</td>
+                <td>132万</td>
+                <td>-</td>
+                <td>13200元/m²</td>
+                <td>思达8号院                      金水-大石桥-卫生路33号附37号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759188178?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136528.89239615®ion_ids=3114&position=46&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>北环文化路双气电梯房      首付10万    拎包入住</td>
+                <td>3室2厅123m²低层(共32层)2006年建造</td>
+                <td>142万</td>
+                <td>-</td>
+                <td>11545元/m²</td>
+                <td>联通家属院                      金水-北环路-北环路40号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1755900089?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136585.93187741®ion_ids=3114&position=47&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>急卖！！东风路 公园旁 开祥御龙城 双气小三房 小区环境优美</td>
+                <td>3室2厅92m²低层(共33层)2014年建造</td>
+                <td>140万</td>
+                <td>-</td>
+                <td>15170元/m²</td>
+                <td>开祥御龙城                      金水-东风路-天明路82号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759566409?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01365e1.06258708®ion_ids=3114&position=48&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东风路天明路 开祥御龙城 精装小三房 环境优美 楼下绿荫公园</td>
+                <td>3室1厅92m²中层(共33层)2017年建造</td>
+                <td>142万</td>
+                <td>-</td>
+                <td>15406元/m²</td>
+                <td>开祥御龙城                      金水-东风路-天明路82号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759710394?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136643.75079199®ion_ids=3114&position=49&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>绿荫公园旁开祥御龙城 低首付精装修 停车方便 业主诚心出售</td>
+                <td>3室1厅92m²中层(共33层)2014年建造</td>
+                <td>145万</td>
+                <td>-</td>
+                <td>15732元/m²</td>
+                <td>开祥御龙城                      金水-东风路-天明路82号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1747348911?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01366b0.93585732®ion_ids=3114&position=50&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>泰山誉景精装修3房南北通透全配位置安静实景拍摄急</td>
+                <td>3室2厅89m²中层(共32层)2019年建造</td>
+                <td>133万</td>
+                <td>-</td>
+                <td>14944元/m²</td>
+                <td>泰山誉景                      金水-鑫苑路-经三路,近北三环</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759405780?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136712.99282263®ion_ids=3114&position=51&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>真，经七路万达广场旁，双气婚房，全明气派3房，花园社区，急卖</td>
+                <td>3室2厅105m²中层(共7层)2000年建造</td>
+                <td>138万</td>
+                <td>-</td>
+                <td>13143元/m²</td>
+                <td>河南省商务厅家属院                      金水-丰产路-经七路15-4号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1754490924?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136773.36130342®ion_ids=3114&position=52&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>首付20万！楼下地铁口人民公园！无税大三房！全明双卫好停车</td>
+                <td>3室2厅116m²高层(共26层)2010年建造</td>
+                <td>134万</td>
+                <td>-</td>
+                <td>11552元/m²</td>
+                <td>金峰金岸国际                      金水-21世纪社区-西太康路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759214900?from=filter-saleMetro&spread=filtersearch_t&uniqid=pc5d2316b01367d9.87539767®ion_ids=3114&position=53&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>劲爆！首付25买温馨三房，3楼，停车方便，全明户型，花园社区</td>
+                <td>3室1厅107m²中层(共7层)2000年建造</td>
+                <td>125万</td>
+                <td>-</td>
+                <td>11682元/m²</td>
+                <td>思达8号院                      金水-大石桥-卫生路33号附37号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1758715257?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136844.40234417®ion_ids=3114&position=54&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>汉飞金沙国际 业主急售豪装三房采光无敌 应有尽有速来看房！！</td>
+                <td>3室1厅110m²低层(共26层)2012年建造</td>
+                <td>145万</td>
+                <td>-</td>
+                <td>13182元/m²</td>
+                <td>汉飞金沙国际                      金水-沙口路-沙口路1号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1759129821?from=filter&spread=filtersearch_t&uniqid=pc5d2316b01368a2.12278219®ion_ids=3114&position=55&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>开祥御龙城  朝南 小三房  精装全明户型 业主诚心出售</td>
+                <td>3室1厅92m²中层(共33层)2013年建造</td>
+                <td>145万</td>
+                <td>-</td>
+                <td>15732元/m²</td>
+                <td>开祥御龙城                      金水-东风路-天明路82号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1747378897?from=filter&spread=filtersearch_t&uniqid=pc5d2316b0136902.93987215®ion_ids=3114&position=56&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>博宇晴城南北双阳台，明厨明卫，视野开阔，有钥匙随时看房</td>
+                <td>3室2厅119m²高层(共18层)2010年建造</td>
+                <td>150万</td>
+                <td>-</td>
+                <td>12508元/m²</td>
+                <td>博宇晴城                      金水-丰庆路-普庆路,近新村路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1674910247?from=filter&spread=filtersearch_p&uniqid=pc5d2316b0136976.55952332®ion_ids=3114&position=57&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>汉飞城市公园 2号地铁口 多层二楼 精装三房 户型方正采光好</td>
+                <td>3室2厅93m²低层(共6层)2008年建造</td>
+                <td>130万</td>
+                <td>-</td>
+                <td>13978元/m²</td>
+                <td>汉飞城市公园东区                      金水-花园路-宏明路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1716544460?from=filter&spread=filtersearch_p&uniqid=pc5d2316b01369d4.75355342®ion_ids=3114&position=58&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>瑞隆城 电梯房精装双气南北通透3室2厅 换房急售 随时看房</td>
+                <td>3室1厅100m²高层(共30层)2014年建造</td>
+                <td>148万</td>
+                <td>-</td>
+                <td>14800元/m²</td>
+                <td>瑞隆城                      金水-大石桥-沙口路</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1728910709?from=filter&spread=filtersearch_p&uniqid=pc5d2316b0136a43.41868679®ion_ids=3114&position=59&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>姜寨北街19号院 通透大三房 位置优越 可上文源学校 有钥匙</td>
+                <td>3室2厅152m²高层(共7层)2000年建造</td>
+                <td>140万</td>
+                <td>-</td>
+                <td>9211元/m²</td>
+                <td>姜寨北街20号院                      金水-中医院-姜砦北路20号</td>
+                <td>https://zhengzhou.anjuke.com/prop/view/A1756347539?from=filter&spread=filtersearch_p&uniqid=pc5d2316b0136aa6.39556139®ion_ids=3114&position=60&kwtype=filter&now_time=1562580656</td>
+                <td>安居客</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>精装 婚房 三房 全新家具家电 拎包即住 满五年 急售</td>
+                <td>中楼层(共7层)3室2厅|93.99平米|南北</td>
+                <td>150万</td>
+                <td>156万</td>
+                <td>单价15959.1元/平米</td>
+                <td>中楼层(共7层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19052011710100133972.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>精装 婚房 三房 全新家具家电 拎包即住 满五年 急售</td>
+                <td>中楼层(共7层)3室2厅|93.99平米|南北</td>
+                <td>150万</td>
+                <td>156万</td>
+                <td>单价15959.1元/平米</td>
+                <td>中楼层(共7层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19052011710100133972.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>精装 婚房 三房 全新家具家电 拎包即住 满五年 急售</td>
+                <td>中楼层(共7层)3室2厅|93.99平米|南北</td>
+                <td>150万</td>
+                <td>156万</td>
+                <td>单价15959.1元/平米</td>
+                <td>中楼层(共7层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19052011710100133972.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>郑大二附院对/面，2楼霸气大三房，紧/邻省委军区！</td>
+                <td>经五路</td>
+                <td>150万</td>
+                <td>160万</td>
+                <td>单价15770元/平米</td>
+                <td>经八路29号 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102358473.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>郑大二附院对/面，2楼霸气大三房，紧/邻省委军区！</td>
+                <td>经五路</td>
+                <td>150万</td>
+                <td>160万</td>
+                <td>单价15770元/平米</td>
+                <td>经八路29号 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102358473.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>郑大二附院对/面，2楼霸气大三房，紧/邻省委军区！</td>
+                <td>经五路</td>
+                <td>150万</td>
+                <td>160万</td>
+                <td>单价15770元/平米</td>
+                <td>经八路29号 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102358473.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>红专路经三路，双气大三房，145万户型正气大方！</td>
+                <td>高楼层(共6层)3室2厅|121.1平米|南北</td>
+                <td>143万</td>
+                <td>143万</td>
+                <td>单价11808.4元/平米</td>
+                <td>高楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19040111710100136631.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>省医旁 黄河路东明路 通透采光大三房 随时看 诚心售</td>
+                <td>高楼层(共6层)|1998年建|3室2厅|115.89平米|南北</td>
+                <td>140万</td>
+                <td>140万</td>
+                <td>单价12080.4元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18101011710100111294.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金水路东明路三居室出售，双气采光足，欢迎看房！</td>
+                <td>高楼层(共6层)|1989年建|3室1厅|78平米|南北</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>单价12820.5元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18091211710100316170.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>燕庄曼哈顿  燕景欣居  南北通透大三房  采光无遮挡</td>
+                <td>高楼层(共6层)|1997年建|3室2厅|125平米|南北</td>
+                <td>170万</td>
+                <td>170万</td>
+                <td>单价13600元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18090911710100129383.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>福元路玉凤路燕凤小区 通透三房 中等装修 停车方便</td>
+                <td>中楼层(共7层)|1998年建|3室1厅|98.8平米|南北</td>
+                <td>134万</td>
+                <td>134万</td>
+                <td>单价13562.8元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/19042011710100162435.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>北龙湖旁，南北通透大三房，满五年，无抵押</td>
+                <td>中楼层(共6层)3室2厅|122平米|南北</td>
+                <td>145万</td>
+                <td>145万</td>
+                <td>单价11885.2元/平米</td>
+                <td>中楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/18091111710100128021.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>农业路53号院，配套齐全，交通便利。</td>
+                <td>高楼层(共7层)|2000年建|3室2厅|104平米|南北</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>单价10576.9元/平米</td>
+                <td>高楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18091511710100115281.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>明天花园满五年没有贷款没有个税 客厅和主卧朝南</td>
+                <td>高楼层(共6层)|2008年建|3室2厅|116.38平米|南北</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价14177.7元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18091911710100483246.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>业主好说话，房子也是诚心出售，产权清晰</td>
+                <td>高楼层(共6层)3室2厅|126.57平米|南北</td>
+                <td>145万</td>
+                <td>145万</td>
+                <td>单价11456.1元/平米</td>
+                <td>高楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/18090711710100101677.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>北三环大三房带地上车位！带19平地下室！</td>
+                <td>中楼层(共7层)|2008年建|3室2厅|140.42平米|南北</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价14100.6元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18092011710100388268.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 北三环精装三房两卫 双气地暖</td>
+                <td>低楼层(共27层)|2008年建|3室2厅|146.98平米|南北</td>
+                <td>164万</td>
+                <td>164万</td>
+                <td>单价11158元/平米</td>
+                <td>低楼层(共27层)</td>
+                <td>https://zz.ke.com/ershoufang/18091211710100109121.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>北三环  双气社区 东风渠畔景观房 毛坯三房</td>
+                <td>中楼层(共30层)3室2厅|149.65平米|南西南西西北北</td>
+                <td>164万</td>
+                <td>164万</td>
+                <td>单价10958.9元/平米</td>
+                <td>中楼层(共30层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19052611710100148250.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 南北通透 视野开阔 交通便利</td>
+                <td>中楼层(共6层)|2008年建|3室2厅|105.72平米|南北</td>
+                <td>166万</td>
+                <td>166万</td>
+                <td>单价15701.9元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/19030411710100121363.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房源真实.产权清晰.业主诚心出售.欢迎看房</td>
+                <td>中楼层(共29层)|2008年建|3室2厅|113.75平米|北南</td>
+                <td>163万</td>
+                <td>163万</td>
+                <td>单价14329.7元/平米</td>
+                <td>中楼层(共29层)</td>
+                <td>https://zz.ke.com/ershoufang/19061711710100101269.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>花园路地铁口四十七中是中间楼层三卧朝南精装修大</td>
+                <td>中楼层(共7层)|1998年建|3室2厅|117.85平米|南北</td>
+                <td>175万</td>
+                <td>175万</td>
+                <td>单价14849.4元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18092011710100278761.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>光大家属院 全天热水 双气不临街路 随时看房 诚售</td>
+                <td>低楼层(共7层)3室2厅|110.43平米|南北</td>
+                <td>188万</td>
+                <td>188万</td>
+                <td>单价17024.4元/平米</td>
+                <td>低楼层(共7层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19051511710100126227.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>业主诚心出售，房子户型方正，两卧朝南，楼层低1</td>
+                <td>低楼层(共7层)3室2厅|113.07平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价11939.5元/平米</td>
+                <td>低楼层(共7层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19051611710100137540.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>南北通透，明厨明卫，多层家属院，适合居住！</td>
+                <td>高楼层(共6层)|1997年建|3室1厅|81.72平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价16519.8元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/19032711710100118914.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五唯一   无贷 业主诚心出售</td>
+                <td>中楼层(共5层)|1989年建|3室2厅|92.81平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价14545.8元/平米</td>
+                <td>中楼层(共5层)</td>
+                <td>https://zz.ke.com/ershoufang/19011011710100153376.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>多层大三居 南北通透 业主诚心卖 有地下室 停车位</td>
+                <td>中楼层(共6层)|2006年建|3室2厅|120.41平米|南北</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价13703.2元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/19041011710100255699.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>华林广场 3室2厅 南 北</td>
+                <td>高楼层(共20层)|2000年建|3室2厅|133.82平米|南北</td>
+                <td>153万</td>
+                <td>153万</td>
+                <td>单价11433.3元/平米</td>
+                <td>高楼层(共20层)</td>
+                <td>https://zz.ke.com/ershoufang/18100711710100104032.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经一路红专路、省医商圈、小三房 院内可以停车、</td>
+                <td>中楼层(共6层)|1996年建|3室2厅|74.67平米|南北</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>单价14061.9元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18112811710100113233.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经五路8号院 双气3楼3房 看房方便 经五路经五路口</td>
+                <td>中楼层(共4层)|1975年建|3室2厅|81.81平米|南北</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价20168.7元/平米</td>
+                <td>中楼层(共4层)</td>
+                <td>https://zz.ke.com/ershoufang/18091011710100158021.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子是精装大三房，南北通透户型，业主诚意出售</td>
+                <td>中楼层(共6层)|2011年建|3室2厅|131.78平米|南北</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价15025元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18092411710100128468.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东风路 花园路 文博广场 朝阳采光 三居室 南北通透</td>
+                <td>高楼层(共6层)3室2厅|110.35平米|南北</td>
+                <td>155万</td>
+                <td>155万</td>
+                <td>单价14046.2元/平米</td>
+                <td>高楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/18101311710100101519.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金水新鑫花园优质三房，南北通透，户型方正，必看好房</td>
+                <td>中楼层(共7层)|1996年建|3室2厅|124.24平米|南北</td>
+                <td>196万</td>
+                <td>196万</td>
+                <td>单价15775.9元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/19050511710100139330.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经三路黄河路 双气三房 户型方正 南北通透</td>
+                <td>高楼层(共7层)|1995年建|3室2厅|89.51平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价15082.1元/平米</td>
+                <td>高楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18111011710100101220.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>红专路经三路，双气大三房，145万户型正气大方！</td>
+                <td>高楼层(共6层)3室2厅|121.1平米|南北</td>
+                <td>143万</td>
+                <td>143万</td>
+                <td>单价11808.4元/平米</td>
+                <td>高楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19040111710100136631.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>省医旁 黄河路东明路 通透采光大三房 随时看 诚心售</td>
+                <td>高楼层(共6层)|1998年建|3室2厅|115.89平米|南北</td>
+                <td>140万</td>
+                <td>140万</td>
+                <td>单价12080.4元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18101011710100111294.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金水路东明路三居室出售，双气采光足，欢迎看房！</td>
+                <td>高楼层(共6层)|1989年建|3室1厅|78平米|南北</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>单价12820.5元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18091211710100316170.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>燕庄曼哈顿  燕景欣居  南北通透大三房  采光无遮挡</td>
+                <td>高楼层(共6层)|1997年建|3室2厅|125平米|南北</td>
+                <td>170万</td>
+                <td>170万</td>
+                <td>单价13600元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18090911710100129383.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>福元路玉凤路燕凤小区 通透三房 中等装修 停车方便</td>
+                <td>中楼层(共7层)|1998年建|3室1厅|98.8平米|南北</td>
+                <td>134万</td>
+                <td>134万</td>
+                <td>单价13562.8元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/19042011710100162435.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>北龙湖旁，南北通透大三房，满五年，无抵押</td>
+                <td>中楼层(共6层)3室2厅|122平米|南北</td>
+                <td>145万</td>
+                <td>145万</td>
+                <td>单价11885.2元/平米</td>
+                <td>中楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/18091111710100128021.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>农业路53号院，配套齐全，交通便利。</td>
+                <td>高楼层(共7层)|2000年建|3室2厅|104平米|南北</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>单价10576.9元/平米</td>
+                <td>高楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18091511710100115281.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>明天花园满五年没有贷款没有个税 客厅和主卧朝南</td>
+                <td>高楼层(共6层)|2008年建|3室2厅|116.38平米|南北</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价14177.7元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18091911710100483246.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>业主好说话，房子也是诚心出售，产权清晰</td>
+                <td>高楼层(共6层)3室2厅|126.57平米|南北</td>
+                <td>145万</td>
+                <td>145万</td>
+                <td>单价11456.1元/平米</td>
+                <td>高楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/18090711710100101677.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>北三环大三房带地上车位！带19平地下室！</td>
+                <td>中楼层(共7层)|2008年建|3室2厅|140.42平米|南北</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价14100.6元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18092011710100388268.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 北三环精装三房两卫 双气地暖</td>
+                <td>低楼层(共27层)|2008年建|3室2厅|146.98平米|南北</td>
+                <td>164万</td>
+                <td>164万</td>
+                <td>单价11158元/平米</td>
+                <td>低楼层(共27层)</td>
+                <td>https://zz.ke.com/ershoufang/18091211710100109121.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>北三环  双气社区 东风渠畔景观房 毛坯三房</td>
+                <td>中楼层(共30层)3室2厅|149.65平米|南西南西西北北</td>
+                <td>164万</td>
+                <td>164万</td>
+                <td>单价10958.9元/平米</td>
+                <td>中楼层(共30层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19052611710100148250.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 南北通透 视野开阔 交通便利</td>
+                <td>中楼层(共6层)|2008年建|3室2厅|105.72平米|南北</td>
+                <td>166万</td>
+                <td>166万</td>
+                <td>单价15701.9元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/19030411710100121363.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房源真实.产权清晰.业主诚心出售.欢迎看房</td>
+                <td>中楼层(共29层)|2008年建|3室2厅|113.75平米|北南</td>
+                <td>163万</td>
+                <td>163万</td>
+                <td>单价14329.7元/平米</td>
+                <td>中楼层(共29层)</td>
+                <td>https://zz.ke.com/ershoufang/19061711710100101269.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>花园路地铁口四十七中是中间楼层三卧朝南精装修大</td>
+                <td>中楼层(共7层)|1998年建|3室2厅|117.85平米|南北</td>
+                <td>175万</td>
+                <td>175万</td>
+                <td>单价14849.4元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18092011710100278761.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>光大家属院 全天热水 双气不临街路 随时看房 诚售</td>
+                <td>低楼层(共7层)3室2厅|110.43平米|南北</td>
+                <td>188万</td>
+                <td>188万</td>
+                <td>单价17024.4元/平米</td>
+                <td>低楼层(共7层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19051511710100126227.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>业主诚心出售，房子户型方正，两卧朝南，楼层低1</td>
+                <td>低楼层(共7层)3室2厅|113.07平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价11939.5元/平米</td>
+                <td>低楼层(共7层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19051611710100137540.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>南北通透，明厨明卫，多层家属院，适合居住！</td>
+                <td>高楼层(共6层)|1997年建|3室1厅|81.72平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价16519.8元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/19032711710100118914.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五唯一   无贷 业主诚心出售</td>
+                <td>中楼层(共5层)|1989年建|3室2厅|92.81平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价14545.8元/平米</td>
+                <td>中楼层(共5层)</td>
+                <td>https://zz.ke.com/ershoufang/19011011710100153376.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>多层大三居 南北通透 业主诚心卖 有地下室 停车位</td>
+                <td>中楼层(共6层)|2006年建|3室2厅|120.41平米|南北</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价13703.2元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/19041011710100255699.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>华林广场 3室2厅 南 北</td>
+                <td>高楼层(共20层)|2000年建|3室2厅|133.82平米|南北</td>
+                <td>153万</td>
+                <td>153万</td>
+                <td>单价11433.3元/平米</td>
+                <td>高楼层(共20层)</td>
+                <td>https://zz.ke.com/ershoufang/18100711710100104032.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经一路红专路、省医商圈、小三房 院内可以停车、</td>
+                <td>中楼层(共6层)|1996年建|3室2厅|74.67平米|南北</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>单价14061.9元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18112811710100113233.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经五路8号院 双气3楼3房 看房方便 经五路经五路口</td>
+                <td>中楼层(共4层)|1975年建|3室2厅|81.81平米|南北</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价20168.7元/平米</td>
+                <td>中楼层(共4层)</td>
+                <td>https://zz.ke.com/ershoufang/18091011710100158021.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子是精装大三房，南北通透户型，业主诚意出售</td>
+                <td>中楼层(共6层)|2011年建|3室2厅|131.78平米|南北</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价15025元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18092411710100128468.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东风路 花园路 文博广场 朝阳采光 三居室 南北通透</td>
+                <td>高楼层(共6层)3室2厅|110.35平米|南北</td>
+                <td>155万</td>
+                <td>155万</td>
+                <td>单价14046.2元/平米</td>
+                <td>高楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/18101311710100101519.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金水新鑫花园优质三房，南北通透，户型方正，必看好房</td>
+                <td>中楼层(共7层)|1996年建|3室2厅|124.24平米|南北</td>
+                <td>196万</td>
+                <td>196万</td>
+                <td>单价15775.9元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/19050511710100139330.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经三路黄河路 双气三房 户型方正 南北通透</td>
+                <td>高楼层(共7层)|1995年建|3室2厅|89.51平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价15082.1元/平米</td>
+                <td>高楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18111011710100101220.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>红专路经三路，双气大三房，145万户型正气大方！</td>
+                <td>高楼层(共6层)3室2厅|121.1平米|南北</td>
+                <td>143万</td>
+                <td>143万</td>
+                <td>单价11808.4元/平米</td>
+                <td>高楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19040111710100136631.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>省医旁 黄河路东明路 通透采光大三房 随时看 诚心售</td>
+                <td>高楼层(共6层)|1998年建|3室2厅|115.89平米|南北</td>
+                <td>140万</td>
+                <td>140万</td>
+                <td>单价12080.4元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18101011710100111294.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金水路东明路三居室出售，双气采光足，欢迎看房！</td>
+                <td>高楼层(共6层)|1989年建|3室1厅|78平米|南北</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>单价12820.5元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18091211710100316170.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>燕庄曼哈顿  燕景欣居  南北通透大三房  采光无遮挡</td>
+                <td>高楼层(共6层)|1997年建|3室2厅|125平米|南北</td>
+                <td>170万</td>
+                <td>170万</td>
+                <td>单价13600元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18090911710100129383.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>福元路玉凤路燕凤小区 通透三房 中等装修 停车方便</td>
+                <td>中楼层(共7层)|1998年建|3室1厅|98.8平米|南北</td>
+                <td>134万</td>
+                <td>134万</td>
+                <td>单价13562.8元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/19042011710100162435.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>北龙湖旁，南北通透大三房，满五年，无抵押</td>
+                <td>中楼层(共6层)3室2厅|122平米|南北</td>
+                <td>145万</td>
+                <td>145万</td>
+                <td>单价11885.2元/平米</td>
+                <td>中楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/18091111710100128021.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>农业路53号院，配套齐全，交通便利。</td>
+                <td>高楼层(共7层)|2000年建|3室2厅|104平米|南北</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>单价10576.9元/平米</td>
+                <td>高楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18091511710100115281.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>明天花园满五年没有贷款没有个税 客厅和主卧朝南</td>
+                <td>高楼层(共6层)|2008年建|3室2厅|116.38平米|南北</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价14177.7元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18091911710100483246.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>业主好说话，房子也是诚心出售，产权清晰</td>
+                <td>高楼层(共6层)3室2厅|126.57平米|南北</td>
+                <td>145万</td>
+                <td>145万</td>
+                <td>单价11456.1元/平米</td>
+                <td>高楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/18090711710100101677.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>北三环大三房带地上车位！带19平地下室！</td>
+                <td>中楼层(共7层)|2008年建|3室2厅|140.42平米|南北</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价14100.6元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18092011710100388268.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 北三环精装三房两卫 双气地暖</td>
+                <td>低楼层(共27层)|2008年建|3室2厅|146.98平米|南北</td>
+                <td>164万</td>
+                <td>164万</td>
+                <td>单价11158元/平米</td>
+                <td>低楼层(共27层)</td>
+                <td>https://zz.ke.com/ershoufang/18091211710100109121.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>北三环  双气社区 东风渠畔景观房 毛坯三房</td>
+                <td>中楼层(共30层)3室2厅|149.65平米|南西南西西北北</td>
+                <td>164万</td>
+                <td>164万</td>
+                <td>单价10958.9元/平米</td>
+                <td>中楼层(共30层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19052611710100148250.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 南北通透 视野开阔 交通便利</td>
+                <td>中楼层(共6层)|2008年建|3室2厅|105.72平米|南北</td>
+                <td>166万</td>
+                <td>166万</td>
+                <td>单价15701.9元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/19030411710100121363.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房源真实.产权清晰.业主诚心出售.欢迎看房</td>
+                <td>中楼层(共29层)|2008年建|3室2厅|113.75平米|北南</td>
+                <td>163万</td>
+                <td>163万</td>
+                <td>单价14329.7元/平米</td>
+                <td>中楼层(共29层)</td>
+                <td>https://zz.ke.com/ershoufang/19061711710100101269.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>花园路地铁口四十七中是中间楼层三卧朝南精装修大</td>
+                <td>中楼层(共7层)|1998年建|3室2厅|117.85平米|南北</td>
+                <td>175万</td>
+                <td>175万</td>
+                <td>单价14849.4元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18092011710100278761.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>光大家属院 全天热水 双气不临街路 随时看房 诚售</td>
+                <td>低楼层(共7层)3室2厅|110.43平米|南北</td>
+                <td>188万</td>
+                <td>188万</td>
+                <td>单价17024.4元/平米</td>
+                <td>低楼层(共7层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19051511710100126227.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>业主诚心出售，房子户型方正，两卧朝南，楼层低1</td>
+                <td>低楼层(共7层)3室2厅|113.07平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价11939.5元/平米</td>
+                <td>低楼层(共7层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/19051611710100137540.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>南北通透，明厨明卫，多层家属院，适合居住！</td>
+                <td>高楼层(共6层)|1997年建|3室1厅|81.72平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价16519.8元/平米</td>
+                <td>高楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/19032711710100118914.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五唯一   无贷 业主诚心出售</td>
+                <td>中楼层(共5层)|1989年建|3室2厅|92.81平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价14545.8元/平米</td>
+                <td>中楼层(共5层)</td>
+                <td>https://zz.ke.com/ershoufang/19011011710100153376.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>多层大三居 南北通透 业主诚心卖 有地下室 停车位</td>
+                <td>中楼层(共6层)|2006年建|3室2厅|120.41平米|南北</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价13703.2元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/19041011710100255699.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>华林广场 3室2厅 南 北</td>
+                <td>高楼层(共20层)|2000年建|3室2厅|133.82平米|南北</td>
+                <td>153万</td>
+                <td>153万</td>
+                <td>单价11433.3元/平米</td>
+                <td>高楼层(共20层)</td>
+                <td>https://zz.ke.com/ershoufang/18100711710100104032.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经一路红专路、省医商圈、小三房 院内可以停车、</td>
+                <td>中楼层(共6层)|1996年建|3室2厅|74.67平米|南北</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>单价14061.9元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18112811710100113233.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经五路8号院 双气3楼3房 看房方便 经五路经五路口</td>
+                <td>中楼层(共4层)|1975年建|3室2厅|81.81平米|南北</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价20168.7元/平米</td>
+                <td>中楼层(共4层)</td>
+                <td>https://zz.ke.com/ershoufang/18091011710100158021.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子是精装大三房，南北通透户型，业主诚意出售</td>
+                <td>中楼层(共6层)|2011年建|3室2厅|131.78平米|南北</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价15025元/平米</td>
+                <td>中楼层(共6层)</td>
+                <td>https://zz.ke.com/ershoufang/18092411710100128468.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东风路 花园路 文博广场 朝阳采光 三居室 南北通透</td>
+                <td>高楼层(共6层)3室2厅|110.35平米|南北</td>
+                <td>155万</td>
+                <td>155万</td>
+                <td>单价14046.2元/平米</td>
+                <td>高楼层(共6层)                                                3室2厅</td>
+                <td>https://zz.ke.com/ershoufang/18101311710100101519.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金水新鑫花园优质三房，南北通透，户型方正，必看好房</td>
+                <td>中楼层(共7层)|1996年建|3室2厅|124.24平米|南北</td>
+                <td>196万</td>
+                <td>196万</td>
+                <td>单价15775.9元/平米</td>
+                <td>中楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/19050511710100139330.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经三路黄河路 双气三房 户型方正 南北通透</td>
+                <td>高楼层(共7层)|1995年建|3室2厅|89.51平米|南北</td>
+                <td>135万</td>
+                <td>135万</td>
+                <td>单价15082.1元/平米</td>
+                <td>高楼层(共7层)</td>
+                <td>https://zz.ke.com/ershoufang/18111011710100101220.html</td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>红专路经三路，双气大三房，145万户型正气大方！</td>
+                <td>财富广场</td>
+                <td>143万</td>
+                <td>143万</td>
+                <td>单价11809元/平米</td>
+                <td>美好佳园 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101973010.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金水路民航地铁口 小高层两梯六户 满五年业主换房急售</td>
+                <td>燕庄</td>
+                <td>190万</td>
+                <td>190万</td>
+                <td>单价12704元/平米</td>
+                <td>新鑫花园(金水) </td>
+                <td>https://zz.lianjia.com/ershoufang/104101144910.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金燕住宅西院 3室2厅 198万</td>
+                <td>未来大厦</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价14163元/平米</td>
+                <td>金燕住宅西院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102421125.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>联通家属院-双气-购房只有契税-70年产权住宅</td>
+                <td>汽配大世界</td>
+                <td>168万</td>
+                <td>168万</td>
+                <td>单价13184元/平米</td>
+                <td>联通家属院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100827441.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>明天花园满五年没有贷款没有个税 客厅和主卧朝南</td>
+                <td>绿茵广场</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价14178元/平米</td>
+                <td>明天花园 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100834324.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房源真实.产权清晰.业主诚心出售.欢迎看房</td>
+                <td>燕庄</td>
+                <td>163万</td>
+                <td>163万</td>
+                <td>单价14330元/平米</td>
+                <td>首座国际公寓 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102346908.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>农业路53号院，配套齐全，交通便利。</td>
+                <td>水上乐园</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>单价10577元/平米</td>
+                <td>农业路53号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101220905.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>绿城水岸名苑 三房自住装修 拎包入住 装修好就住两月</td>
+                <td>燕庄</td>
+                <td>175万</td>
+                <td>175万</td>
+                <td>单价17315元/平米</td>
+                <td>绿城水岸名苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101180938.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>首座国际标准南北三房，满五唯一，中间楼层，诚心出售</td>
+                <td>燕庄</td>
+                <td>190万</td>
+                <td>190万</td>
+                <td>单价13971元/平米</td>
+                <td>首座国际公寓 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101427456.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经一路红专路、省医商圈、小三房 院内可以停车、</td>
+                <td>财富广场</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>单价14062元/平米</td>
+                <td>河务局家属区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101573106.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 南北通透 视野开阔 交通便利</td>
+                <td>绿茵广场</td>
+                <td>166万</td>
+                <td>166万</td>
+                <td>单价15702元/平米</td>
+                <td>思达大户人家 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101837730.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 北三环精装三房两卫 双气地暖</td>
+                <td>庙李</td>
+                <td>164万</td>
+                <td>164万</td>
+                <td>单价11158元/平米</td>
+                <td>中建大厦 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101908168.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，双气户型方正小三房，北龙湖畔 温馨小区</td>
+                <td>汽配大世界</td>
+                <td>140万</td>
+                <td>140万</td>
+                <td>单价15731元/平米</td>
+                <td>琥珀名城 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101636741.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经二路纬二路  二十三中家属院 温馨小3房 适中楼层</td>
+                <td>省人民医院</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价22892元/平米</td>
+                <td>经二路5号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101419436.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东风路 花园路 文博广场 朝阳采光 三居室 南北通透</td>
+                <td>省中医院</td>
+                <td>155万</td>
+                <td>155万</td>
+                <td>单价14047元/平米</td>
+                <td>文化路71号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100847795.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，无抵押，无贷款，9成新家具家电</td>
+                <td>陈寨</td>
+                <td>178万</td>
+                <td>178万</td>
+                <td>单价13131元/平米</td>
+                <td>中方园西区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101208359.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>正商园田花园 3室2厅 160万</td>
+                <td>海洋馆</td>
+                <td>160万</td>
+                <td>160万</td>
+                <td>单价13676元/平米</td>
+                <td>正商园田花园 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101260249.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>联通家属院-双气大三居-满五唯一</td>
+                <td>汽配大世界</td>
+                <td>175万</td>
+                <td>175万</td>
+                <td>单价12432元/平米</td>
+                <td>联通家属院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101404677.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>博颂路 明天花园旁 精装大三房  看房随时 业主诚心</td>
+                <td>绿茵广场</td>
+                <td>168万</td>
+                <td>168万</td>
+                <td>单价13018元/平米</td>
+                <td>华晨小区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101424614.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>文化路主语城多层南北通透大三房，满五年，税费少</td>
+                <td>索凌路北段</td>
+                <td>184万</td>
+                <td>184万</td>
+                <td>单价14239元/平米</td>
+                <td>安泰文苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101569130.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五唯一，无抵押贷款，南北通透格局好，</td>
+                <td>庙李</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价12824元/平米</td>
+                <td>瑞祥如意世家 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101699831.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经八路11号院满五唯一，建文旁，双气，低于市场价</td>
+                <td>经五路</td>
+                <td>167万</td>
+                <td>167万</td>
+                <td>单价12779元/平米</td>
+                <td>经八路11附1号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101913561.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>多层大三居 南北通透 业主诚心卖 有地下室 停车位</td>
+                <td>索凌路北段</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价13704元/平米</td>
+                <td>安泰文苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102013059.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>翠竹苑 ，三房南北通透，位置好，产权清晰</td>
+                <td>燕庄</td>
+                <td>196万</td>
+                <td>196万</td>
+                <td>单价14934元/平米</td>
+                <td>江海翠竹苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102049222.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>通风好，采光好，价格低。满五唯一</td>
+                <td>陈寨</td>
+                <td>155万</td>
+                <td>155万</td>
+                <td>单价12120元/平米</td>
+                <td>中方园东区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102253220.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>正弘春晓，三环内，电梯双气，精装修，包家具家.</td>
+                <td>绿茵广场</td>
+                <td>166万</td>
+                <td>166万</td>
+                <td>单价14719元/平米</td>
+                <td>思达大河春天B区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102268170.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东风路 省中医院 农大三区社区 一楼三房 诚心出售</td>
+                <td>轻工业学院</td>
+                <td>185万</td>
+                <td>185万</td>
+                <td>单价18278元/平米</td>
+                <td>河南农业大学第三生活区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102078537.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东明路顺河路 环保局家属院  双气地铁口 小区环境好</td>
+                <td>紫荆山</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>单价13998元/平米</td>
+                <td>河南环保局家属院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100877006.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>华林广场 3室2厅 153万</td>
+                <td>大石桥</td>
+                <td>153万</td>
+                <td>153万</td>
+                <td>单价11434元/平米</td>
+                <td>华林广场 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101397002.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>红专路经三路，双气大三房，145万户型正气大方！</td>
+                <td>财富广场</td>
+                <td>143万</td>
+                <td>143万</td>
+                <td>单价11809元/平米</td>
+                <td>美好佳园 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101973010.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金水路民航地铁口 小高层两梯六户 满五年业主换房急售</td>
+                <td>燕庄</td>
+                <td>190万</td>
+                <td>190万</td>
+                <td>单价12704元/平米</td>
+                <td>新鑫花园(金水) </td>
+                <td>https://zz.lianjia.com/ershoufang/104101144910.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金燕住宅西院 3室2厅 198万</td>
+                <td>未来大厦</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价14163元/平米</td>
+                <td>金燕住宅西院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102421125.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>联通家属院-双气-购房只有契税-70年产权住宅</td>
+                <td>汽配大世界</td>
+                <td>168万</td>
+                <td>168万</td>
+                <td>单价13184元/平米</td>
+                <td>联通家属院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100827441.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>明天花园满五年没有贷款没有个税 客厅和主卧朝南</td>
+                <td>绿茵广场</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价14178元/平米</td>
+                <td>明天花园 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100834324.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房源真实.产权清晰.业主诚心出售.欢迎看房</td>
+                <td>燕庄</td>
+                <td>163万</td>
+                <td>163万</td>
+                <td>单价14330元/平米</td>
+                <td>首座国际公寓 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102346908.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>农业路53号院，配套齐全，交通便利。</td>
+                <td>水上乐园</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>单价10577元/平米</td>
+                <td>农业路53号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101220905.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>绿城水岸名苑 三房自住装修 拎包入住 装修好就住两月</td>
+                <td>燕庄</td>
+                <td>175万</td>
+                <td>175万</td>
+                <td>单价17315元/平米</td>
+                <td>绿城水岸名苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101180938.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>首座国际标准南北三房，满五唯一，中间楼层，诚心出售</td>
+                <td>燕庄</td>
+                <td>190万</td>
+                <td>190万</td>
+                <td>单价13971元/平米</td>
+                <td>首座国际公寓 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101427456.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经一路红专路、省医商圈、小三房 院内可以停车、</td>
+                <td>财富广场</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>单价14062元/平米</td>
+                <td>河务局家属区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101573106.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 南北通透 视野开阔 交通便利</td>
+                <td>绿茵广场</td>
+                <td>166万</td>
+                <td>166万</td>
+                <td>单价15702元/平米</td>
+                <td>思达大户人家 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101837730.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 北三环精装三房两卫 双气地暖</td>
+                <td>庙李</td>
+                <td>164万</td>
+                <td>164万</td>
+                <td>单价11158元/平米</td>
+                <td>中建大厦 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101908168.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，双气户型方正小三房，北龙湖畔 温馨小区</td>
+                <td>汽配大世界</td>
+                <td>140万</td>
+                <td>140万</td>
+                <td>单价15731元/平米</td>
+                <td>琥珀名城 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101636741.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经二路纬二路  二十三中家属院 温馨小3房 适中楼层</td>
+                <td>省人民医院</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价22892元/平米</td>
+                <td>经二路5号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101419436.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东风路 花园路 文博广场 朝阳采光 三居室 南北通透</td>
+                <td>省中医院</td>
+                <td>155万</td>
+                <td>155万</td>
+                <td>单价14047元/平米</td>
+                <td>文化路71号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100847795.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，无抵押，无贷款，9成新家具家电</td>
+                <td>陈寨</td>
+                <td>178万</td>
+                <td>178万</td>
+                <td>单价13131元/平米</td>
+                <td>中方园西区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101208359.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>正商园田花园 3室2厅 160万</td>
+                <td>海洋馆</td>
+                <td>160万</td>
+                <td>160万</td>
+                <td>单价13676元/平米</td>
+                <td>正商园田花园 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101260249.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>联通家属院-双气大三居-满五唯一</td>
+                <td>汽配大世界</td>
+                <td>175万</td>
+                <td>175万</td>
+                <td>单价12432元/平米</td>
+                <td>联通家属院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101404677.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>博颂路 明天花园旁 精装大三房  看房随时 业主诚心</td>
+                <td>绿茵广场</td>
+                <td>168万</td>
+                <td>168万</td>
+                <td>单价13018元/平米</td>
+                <td>华晨小区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101424614.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>文化路主语城多层南北通透大三房，满五年，税费少</td>
+                <td>索凌路北段</td>
+                <td>184万</td>
+                <td>184万</td>
+                <td>单价14239元/平米</td>
+                <td>安泰文苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101569130.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五唯一，无抵押贷款，南北通透格局好，</td>
+                <td>庙李</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价12824元/平米</td>
+                <td>瑞祥如意世家 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101699831.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经八路11号院满五唯一，建文旁，双气，低于市场价</td>
+                <td>经五路</td>
+                <td>167万</td>
+                <td>167万</td>
+                <td>单价12779元/平米</td>
+                <td>经八路11附1号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101913561.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>多层大三居 南北通透 业主诚心卖 有地下室 停车位</td>
+                <td>索凌路北段</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价13704元/平米</td>
+                <td>安泰文苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102013059.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>翠竹苑 ，三房南北通透，位置好，产权清晰</td>
+                <td>燕庄</td>
+                <td>196万</td>
+                <td>196万</td>
+                <td>单价14934元/平米</td>
+                <td>江海翠竹苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102049222.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>通风好，采光好，价格低。满五唯一</td>
+                <td>陈寨</td>
+                <td>155万</td>
+                <td>155万</td>
+                <td>单价12120元/平米</td>
+                <td>中方园东区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102253220.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>正弘春晓，三环内，电梯双气，精装修，包家具家.</td>
+                <td>绿茵广场</td>
+                <td>166万</td>
+                <td>166万</td>
+                <td>单价14719元/平米</td>
+                <td>思达大河春天B区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102268170.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东风路 省中医院 农大三区社区 一楼三房 诚心出售</td>
+                <td>轻工业学院</td>
+                <td>185万</td>
+                <td>185万</td>
+                <td>单价18278元/平米</td>
+                <td>河南农业大学第三生活区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102078537.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东明路顺河路 环保局家属院  双气地铁口 小区环境好</td>
+                <td>紫荆山</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>单价13998元/平米</td>
+                <td>河南环保局家属院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100877006.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>华林广场 3室2厅 153万</td>
+                <td>大石桥</td>
+                <td>153万</td>
+                <td>153万</td>
+                <td>单价11434元/平米</td>
+                <td>华林广场 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101397002.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>红专路经三路，双气大三房，145万户型正气大方！</td>
+                <td>财富广场</td>
+                <td>143万</td>
+                <td>143万</td>
+                <td>单价11809元/平米</td>
+                <td>美好佳园 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101973010.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金水路民航地铁口 小高层两梯六户 满五年业主换房急售</td>
+                <td>燕庄</td>
+                <td>190万</td>
+                <td>190万</td>
+                <td>单价12704元/平米</td>
+                <td>新鑫花园(金水) </td>
+                <td>https://zz.lianjia.com/ershoufang/104101144910.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>金燕住宅西院 3室2厅 198万</td>
+                <td>未来大厦</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价14163元/平米</td>
+                <td>金燕住宅西院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102421125.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>联通家属院-双气-购房只有契税-70年产权住宅</td>
+                <td>汽配大世界</td>
+                <td>168万</td>
+                <td>168万</td>
+                <td>单价13184元/平米</td>
+                <td>联通家属院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100827441.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>明天花园满五年没有贷款没有个税 客厅和主卧朝南</td>
+                <td>绿茵广场</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价14178元/平米</td>
+                <td>明天花园 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100834324.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房源真实.产权清晰.业主诚心出售.欢迎看房</td>
+                <td>燕庄</td>
+                <td>163万</td>
+                <td>163万</td>
+                <td>单价14330元/平米</td>
+                <td>首座国际公寓 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102346908.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>农业路53号院，配套齐全，交通便利。</td>
+                <td>水上乐园</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>单价10577元/平米</td>
+                <td>农业路53号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101220905.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>绿城水岸名苑 三房自住装修 拎包入住 装修好就住两月</td>
+                <td>燕庄</td>
+                <td>175万</td>
+                <td>175万</td>
+                <td>单价17315元/平米</td>
+                <td>绿城水岸名苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101180938.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>首座国际标准南北三房，满五唯一，中间楼层，诚心出售</td>
+                <td>燕庄</td>
+                <td>190万</td>
+                <td>190万</td>
+                <td>单价13971元/平米</td>
+                <td>首座国际公寓 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101427456.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经一路红专路、省医商圈、小三房 院内可以停车、</td>
+                <td>财富广场</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>单价14062元/平米</td>
+                <td>河务局家属区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101573106.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 南北通透 视野开阔 交通便利</td>
+                <td>绿茵广场</td>
+                <td>166万</td>
+                <td>166万</td>
+                <td>单价15702元/平米</td>
+                <td>思达大户人家 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101837730.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一 北三环精装三房两卫 双气地暖</td>
+                <td>庙李</td>
+                <td>164万</td>
+                <td>164万</td>
+                <td>单价11158元/平米</td>
+                <td>中建大厦 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101908168.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，双气户型方正小三房，北龙湖畔 温馨小区</td>
+                <td>汽配大世界</td>
+                <td>140万</td>
+                <td>140万</td>
+                <td>单价15731元/平米</td>
+                <td>琥珀名城 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101636741.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经二路纬二路  二十三中家属院 温馨小3房 适中楼层</td>
+                <td>省人民医院</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价22892元/平米</td>
+                <td>经二路5号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101419436.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东风路 花园路 文博广场 朝阳采光 三居室 南北通透</td>
+                <td>省中医院</td>
+                <td>155万</td>
+                <td>155万</td>
+                <td>单价14047元/平米</td>
+                <td>文化路71号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100847795.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，无抵押，无贷款，9成新家具家电</td>
+                <td>陈寨</td>
+                <td>178万</td>
+                <td>178万</td>
+                <td>单价13131元/平米</td>
+                <td>中方园西区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101208359.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>正商园田花园 3室2厅 160万</td>
+                <td>海洋馆</td>
+                <td>160万</td>
+                <td>160万</td>
+                <td>单价13676元/平米</td>
+                <td>正商园田花园 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101260249.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>联通家属院-双气大三居-满五唯一</td>
+                <td>汽配大世界</td>
+                <td>175万</td>
+                <td>175万</td>
+                <td>单价12432元/平米</td>
+                <td>联通家属院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101404677.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>博颂路 明天花园旁 精装大三房  看房随时 业主诚心</td>
+                <td>绿茵广场</td>
+                <td>168万</td>
+                <td>168万</td>
+                <td>单价13018元/平米</td>
+                <td>华晨小区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101424614.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>文化路主语城多层南北通透大三房，满五年，税费少</td>
+                <td>索凌路北段</td>
+                <td>184万</td>
+                <td>184万</td>
+                <td>单价14239元/平米</td>
+                <td>安泰文苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101569130.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五唯一，无抵押贷款，南北通透格局好，</td>
+                <td>庙李</td>
+                <td>198万</td>
+                <td>198万</td>
+                <td>单价12824元/平米</td>
+                <td>瑞祥如意世家 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101699831.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>经八路11号院满五唯一，建文旁，双气，低于市场价</td>
+                <td>经五路</td>
+                <td>167万</td>
+                <td>167万</td>
+                <td>单价12779元/平米</td>
+                <td>经八路11附1号院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101913561.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>多层大三居 南北通透 业主诚心卖 有地下室 停车位</td>
+                <td>索凌路北段</td>
+                <td>165万</td>
+                <td>165万</td>
+                <td>单价13704元/平米</td>
+                <td>安泰文苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102013059.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>翠竹苑 ，三房南北通透，位置好，产权清晰</td>
+                <td>燕庄</td>
+                <td>196万</td>
+                <td>196万</td>
+                <td>单价14934元/平米</td>
+                <td>江海翠竹苑 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102049222.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>通风好，采光好，价格低。满五唯一</td>
+                <td>陈寨</td>
+                <td>155万</td>
+                <td>155万</td>
+                <td>单价12120元/平米</td>
+                <td>中方园东区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102253220.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>正弘春晓，三环内，电梯双气，精装修，包家具家.</td>
+                <td>绿茵广场</td>
+                <td>166万</td>
+                <td>166万</td>
+                <td>单价14719元/平米</td>
+                <td>思达大河春天B区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102268170.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东风路 省中医院 农大三区社区 一楼三房 诚心出售</td>
+                <td>轻工业学院</td>
+                <td>185万</td>
+                <td>185万</td>
+                <td>单价18278元/平米</td>
+                <td>河南农业大学第三生活区 </td>
+                <td>https://zz.lianjia.com/ershoufang/104102078537.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东明路顺河路 环保局家属院  双气地铁口 小区环境好</td>
+                <td>紫荆山</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>单价13998元/平米</td>
+                <td>河南环保局家属院 </td>
+                <td>https://zz.lianjia.com/ershoufang/104100877006.html</td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>华林广场 3室2厅 153万</td>
+                <td>大石桥</td>
+                <td>153万</td>
+                <td>153万</td>
+                <td>单价11434元/平米</td>
+                <td>华林广场 </td>
+                <td>https://zz.lianjia.com/ershoufang/104101397002.html</td>
+                <td>链家</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>升降标志</th>
+                <th>房屋名</th>
+                <th>房屋备注</th>
+                <th>房屋总价</th>
+                <th>房屋历史总价</th>
+                <th>房屋单价</th>
+                <th>小区名</th>
+                <th>房屋链接</th>
+                <th>来源网站</th>
+            </tr>
+            </tfoot>
+        </table>
+None
+None
+</div>
+</body>
+</html>
